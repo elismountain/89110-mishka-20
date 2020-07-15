@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [OLGA AVRAMENKO](https://up.htmlacademy.ru/adaptive/20/user/89110).
-* Наставник: `Татьяна Симоненко`.
+* Наставник: [Татьяна 👩🏻‍🎓 Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
