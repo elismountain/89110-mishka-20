@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Мишка — интернет-магазин игрушек</title>
+  <link rel="stylesheet" href="#">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <nav class="main-navigation">
+      <div class="main-navigation__wrapper">
+        <a class="header-logo">
+          <img class="header-logo__image" src="#" width="35" height="86" alt="Логотип сайта Мишка">
+        </a>
+
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden"> Открыть меню</span>
+        </button>
+
+      </div>
+      <ul class="main-navigation__site-list site-navigation">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="catalog.html"> Каталог товаров</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="form.html"> Вязание на заказ</a>
+        </li>
+      </ul>
+
+      <ul class="main-navigation__user-list user-navigation">
+        <li class="user-navigation__item">
+          <a class="user-navigation__search" href="#">
+            <svg class="user-navigation__link-image" width="" height=""></svg>
+            <span class="user-navigation__link-text">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="user-navigation__item">
+          <a class="user-navigation__basket" href="#">
+            <svg class="user-navigation__basket-image" width="" height=""></svg>
+          </a>
+          <span class="user-navigation__basket-text">Корзина: пока пуста </span>
+        </ul>
+      </nav>
+    </header>
+
+    <footer class="page-footer">
+
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a class="social-links__link" href="#" aria-label="Instagram">
+            <svg></svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link" href="#" aria-label="Facebook">
+            <svg></svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link" href="#" aria-label="Twitter">
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="#" aria-label="HTML Academy">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <svg></svg>
+        </a>
+      </p>
+    </footer>
+
+    <div class="modal">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="modal-form__title">Добавить в корзину</h2>
+        <fieldset class="modal-form__fieldset"></fieldset>
+        <button class="modal__button button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </body>
+  </html>
