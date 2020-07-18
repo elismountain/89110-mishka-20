@@ -6,10 +6,10 @@
   <link rel="stylesheet" href="#">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <nav class="main-navigation">
-      <div class="main-navigation__logo--wrapper">
+      <div class="main-navigation__wrapper">
         <a class="header-logo">
           <img class="header-logo__image" src="#" width="35" height="86" alt="Логотип сайта Мишка">
         </a>
@@ -52,10 +52,10 @@
           <br> ручной
           <br> работы для дома
         </h2>
-        <ul class="catalog__list">
-          <li class="catalog__list-item">
-            <a class="catalog__list--link" href="#">
-              <span class="catalog__list-text">Предметы интерьера</span>
+        <ul class="catalog-list catalog__list">
+          <li class="catalog-list__item">
+            <a class="catalog-list__link catalog-list__link--interior" href="#">
+              <span class="catalog-list__text">Предметы интерьера</span>
             </a>
           </li>
           <li class="catalog__list-item">
@@ -66,31 +66,31 @@
         </ul>
       </section>
 
-      <section class="promo">
+      <section class="promo content-wrapper ">
         <h2 class="promo__title"> Вязанные корзинки </h2>
         <p class="promo__text"> Товар недели </p>
-        <div class="promo__content--wrapper">
+        <div class="promo__content-wrapper">
           <p class="promo__description">Экологически чистая пряжа,
             <br> ручная работа. Доступны в шести
             <br> расцветках, и
             трех размерах.
           </p>
-          <table class="promo__table">
-            <tr class="table__row">
-              <td class="table__cell">Цвет:</td>
-              <td class="table__cell">«Тиффани»/серый</td>
+          <table class="table-specification promo__table">
+            <tr class="table-specification__row">
+              <td class="table-specification__cell">Цвет:</td>
+              <td class="table-specification__cell">«Тиффани»/серый</td>
             </tr>
-            <tr class="table__row">
-              <td class="table__cell">Диаметр:</td>
-              <td class="table__cell">25 см</td>
+            <tr class="table-specification__row">
+              <td class="table-specification__cell">Диаметр:</td>
+              <td class="table-specification__cell">25 см</td>
             </tr>
-            <tr class="table__row">
-              <td class="table__cell">Высота:</td>
-              <td class="table__cell">15 см</td>
+            <tr class="table-specification__row">
+              <td class="table-specification__cell">Высота:</td>
+              <td class="table-specification__cell">15 см</td>
             </tr>
           </table>
 
-          <div class="promo__image--wrapper">
+          <div class="promo-image">
             <img class="promo__image" src="#" alt="Вязаная корзинка Тиффани">
           </div>
 
@@ -99,42 +99,42 @@
           <button class="promo__button button"> Заказать </button>
         </section>
 
-        <section class="advantages">
+        <section class="advantages content-wrapper">
           <h2 class="advantages__title"> Коротко о нас: </h2>
 
-          <ul class="advantages__list">
+          <ul class="advantages__list advantages-list">
             <li class="advantages__list-item">
-              <img class="advantages__list-item--eco" src="#" width="" height="" alt="">
+              <img class="ecologie" src="#" width="" height="" alt="">
               <span> Экологически чистые
                 <br>материалы
                 <span>
                 </li>
                 <li class="advantages__list-item">
-                  <img class="advantages__list-item--scandinavian" src="#" width="" height="" alt="">
+                  <img class="scandinavian" src="#" width="" height="" alt="">
                   <span> Скандинавский стиль
                     <br> по российской цене
                   </span>
                 </li>
                 <li class="advantages__list-item">
-                  <img class="advantages__list-item--likes" src="#" width="" height="" alt="">
+                  <img class="likes" src="#" width="" height="" alt="">
                   <span> Увеличивает лайки
                     <br> на фотографиях
                   </span>
                 </li>
                 <li class="advantages__list-item">
-                  <img class="advantages__list-item--craft" src="#" width="" height="" alt="">
+                  <img class="craft" src="#" width="" height="" alt="">
                   <span> Связано вручную с
                     <br> любовью и умилением
                   </span>
                 </li>
                 <li class="advantages__list-item">
-                  <img class="advantages__list-item--homeland" src="#" width="" height="" alt="">
+                  <img class="homeland" src="#" width="" height="" alt="">
                   <span> Поддержка отечественного
                     <br> производителя
                   </span>
                 </li>
                 <li class="advantages__list-item">
-                  <img class="advantages__list-item--gift" src="#" width="" height="" alt="">
+                  <img class="gift" src="#" width="" height="" alt="">
                   <span> Поставляется в
                     <br> подарочной упаковке
                   </span>
@@ -144,7 +144,7 @@
 
             <section class="review">
               <h2 class="review__title"> Отзывы </h2>
-              <p class="rewiew__text">
+              <p class="review__text">
                 Я молодая мама, но всё равно
                 <br> фотографии не набирали и близко
                 <br> такого количества лайков, как у
@@ -163,8 +163,8 @@
               </cite>
 
                 <div class="review__nav">
-                  <button class="reviews__nav-button" type="button" aria-label="Назад"></button>
-                  <button class="reviews__nav-button" type="button" aria-label="Вперёд"></button>
+                  <button class="review__nav-button" type="button" aria-label="Назад"></button>
+                  <button class="review__nav-button" type="button" aria-label="Вперёд"></button>
                 </div>
 
                 <button class="review__button button"> Написать </button>
@@ -173,7 +173,7 @@
               <section class="contacts">
                 <h2 class="contacts__title"> Контакты </h2>
 
-                <div class="contacts--wrapper">
+                <div class="contacts-wrapper">
                   <p class="contacts__email">
                     <a class="contacts__email-link" href="#"> info@mimimishkashop.ru </a>
                   </p>
@@ -189,7 +189,7 @@
 
                 <div class="contacts__map">
                   <img class="map-image" src="#" width="" height="" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-                  <div class="map-image__interractive" id="map">
+                  <div class="map-interractive" id="map">
                     <iframe src="#" width="" height="" allowfullscreen>
                     </div>
                   </div>
