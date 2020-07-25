@@ -1,8 +1,15 @@
 .main-navigation {
+  box-sizing: border-box;
   width: 320px;
-  background-color: #ffffff;
 }
 
+@media (min-width:@tablet-width) {
+  .main-navigation {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .main-navigation__wrapper {
   position: relative;
@@ -32,17 +39,4 @@
   left: 50%;
   width: 20px;
   height: 2px;
-}
-
-
-.header-logo {
-  display: block;
-  width: 86px;
-  height: 35px;
-}
-
-.header-logo__image {
-  display: block;
-  width: 86px;
-  height: 35px;
 }
