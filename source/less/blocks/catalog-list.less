@@ -1,0 +1,39 @@
+.catalog-list {
+  position: relative;
+  list-style: none;
+  width: 100%;
+}
+
+.catalog-list__link {
+  position: relative;
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  color: @white;
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-list__link {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: @white;
+    text-decoration: none;
+  }
+}
+
+.catalog-list__link-interior {
+  background-color: @green-light;
+}
+
+.catalog-list__link-toys {
+  background-color: @green-dark;
+}
+
+.catalog__list-text {
+  display: block;
+  max-width: 120px;
+}

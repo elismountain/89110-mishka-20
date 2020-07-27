@@ -1,37 +1,92 @@
 .page-footer {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: #f1f1f1;
-    width: 320px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: @footer-grey;
+  width: 320px;
 }
 
+@media(min-width:@tablet-width) {
+  .page-footer {
+    padding-top: 48px;
+    padding-bottom: 46px;
+    background-color: @footer-grey;
+    min-width: 768px;
+  }
+}
+
+@media(min-width:@desktop-width) {
+  .page-footer {
+    padding-top: 48px;
+    padding-bottom: 46px;
+    background-color: @footer-grey;
+    min-width: 1150px;
+  }
+}
+
+@media(min-width:@tablet-width) {
+  .page-footer__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media(min-width:@desktop-width) {
+  .page-footer__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+}
+@media(min-width:@tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .page-footer__logo {
+    display: block;
+  }
+}
 
 .page-footer__copyright {
-    margin-top: 14px;
-    margin-bottom: 7px;
+  margin-top: 14px;
+  margin-bottom: 7px;
 }
-
+@media(min-width:@tablet-width) {
+  .page-footer__copyright {
+    margin: 0;
+    width: 184px;
+  }
+}
 
 .page-footer__copyright-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0 7px;
-    color: #000000;
-    text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0 7px;
+  color: #000000;
+  text-decoration: none;
 }
 
+.page-footer__copyright-link:hover {
+  fill: @footer-green;
+}
 
 .page-footer__copyright-text {
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 19px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
 }
 
-
 .page-footer__copyright-image {
-    margin-left: 30px;
-    width: 27px;
-    height: 34px;
-    fill: #63d1bb;
+  margin-left: 30px;
+  width: 27px;
+  height: 34px;
+  fill: @green-font;
 }

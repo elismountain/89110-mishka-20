@@ -4,7 +4,20 @@
   justify-content: center;
   list-style: none;
   padding-bottom: 19px;
-  background-color: #f1f1f1;
+  background-color: @footer-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: @footer-grey;
+    padding-bottom: 0;
+    width: 300px;
+    border-bottom: 0;
+  }
 }
 
 .social-links__link {

@@ -4,39 +4,89 @@
   font-size: 17px;
   font-weight: 700;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-navigation {
+    position: relative;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 398px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .user-navigation {
+    position: relative;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 500px;
+  }
+}
 
 .user-navigation__search {
   position: relative;
   display: block;
   padding: 27px 30px 27px 74px;
-  border-bottom: 1px solid #ececec;
-  color: #000000;
-  text-decoration: none;
-  }
-
-
-.user-navigation__search-image {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  fill: #000000;
-  opacity: 0.2;
-  }
-
-.user-navigation__basket {
-  position: relative;
-  display: block;
-  padding: 27px 30px 27px 74px;
-  border-bottom: 1px solid #ececec;
-  color: #000000;
+  border-bottom: 1px solid @grey-light;
+  color: @black;
   text-decoration: none;
 }
 
-.user-navigation__basket-image {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  fill: #000000;
-  opacity: 0.2;
+@media (min-width: @tablet-width) {
+  .user-navigation__search {
+    position: relative;
+    display: block;
+    padding: 27px 30px 27px 74px;
+    border-bottom: 1px solid @grey-light;
+    color: @black;
+    text-decoration: none;
+    border-bottom: none;
   }
+}
+  @media (min-width: @desktop-width) {
+    .user-navigation__search {
+      position: relative;
+      display: block;
+      padding: 27px 30px 27px 74px;
+      border-bottom: 1px solid @grey-light;
+      color: @black;
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+
+    .user-navigation__search:hover {
+      fill: @green-font;
+    }
+    // user-navigation__search--search
+    //user-navigation__search--busket
+
+    .user-navigation__search-image {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      fill: @black;
+      opacity: 0.2;
+    }
+
+    @media (min-width: @tablet-width) {
+      .user-navigation__search-image {
+        position: absolute;
+        top: 50%;
+        fill: @black;
+        opacity: 0.2;
+        left: 32px;
+      }
+    }
+    //.user-navigation__search-text {}//
