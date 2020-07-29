@@ -10,8 +10,7 @@
 
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-navigation">
-      <div class="main-navigation__wrapper">
+    <nav class="main-navigation main-navigation--closed main-nav--nojs">
         <a class="header-logo">
           <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
         </a>
@@ -19,8 +18,8 @@
         <button class="main-navigation__toggle main-navigation__toggle--off" type="button">
           <span class="visually-hidden"> Открыть меню</span>
         </button>
-      </div>
 
+      <div class="main-navigation__wrapper">
       <ul class="main-navigation__site-list site-navigation">
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="catalog.html"> Каталог товаров</a>
@@ -51,6 +50,7 @@
             <span class="user-navigation__basket-text">Корзина: пока пуста </span>
           </a>
       </ul>
+    </div>
 
       <ul class="stock">
         <li class="stock__item">
@@ -68,7 +68,7 @@
   <main class="main-page">
     <h1 class="visually-hidden"> Интернет магазин Мишка </h1>
 
-    <section class="catalog">
+    <section class="catalog content-wrapper">
       <div class="catalog__content-wrapper">
       <h2 class="catalog__title"> Милые штуки
         <br> ручной
@@ -88,7 +88,7 @@
       </ul>
     </section>
 
-    <section class="promo">
+    <section class="promo content-wrapper">
       <h2 class="promo__title"> Вязанные корзинки </h2>
       <p class="promo__text"> Товар недели </p>
       <div class="promo__content-wrapper">
@@ -166,7 +166,7 @@
       </ul>
     </section>
 
-    <section class="review">
+    <section class="review content-wrapper">
       <h2 class="review__title"> Отзывы </h2>
       <p class="review__text">
         Я молодая мама, но всё равно
@@ -194,7 +194,7 @@
       <button class="review__button button"> Написать </button>
     </section>
 
-    <section class="contacts">
+    <section class="contacts content-wrapper">
       <h2 class="contacts__title"> Контакты </h2>
 
       <div class="contacts-wrapper">
@@ -221,7 +221,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer content-wrapper">
     <div class="page-footer__content-wrapper">
       <a class="page-footer__logo" aria-label="Логотип Мишка">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
