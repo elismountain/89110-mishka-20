@@ -3,7 +3,16 @@
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+  }
 }
+
 
 .advantages__list-item {
   position: relative;
@@ -24,6 +33,12 @@
 
   @media (min-width: @desktop-width) {
     width: 351px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
   }
 }
 
