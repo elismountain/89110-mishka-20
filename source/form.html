@@ -51,15 +51,18 @@
     </div>
 
     <main class="page-main">
-      <div class="content-wrapper">
-      <h1 class="page-main__title">Вязание на заказ</h1>
-    </div>
+      <header class="page-main__header">
+        <div class="content-wrapper">
+          <h1 class="page-main__title">Вязание на заказ</h1>
+        </div>
+      </header>
 
 
       <form class="special-order" action="https://echo.htmlacademy.ru" method="post">
         <p class="special-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
           простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
+        <div class="special-order__content-wrapper">
           <fieldset class="special-order__fieldset content-wrapper">
             <legend class="special-order__legend">
               <span class="special-order__text">Тип</span>
@@ -78,8 +81,9 @@
               </p>
             </div>
           </fieldset>
+        </div>
 
-
+        <div class="special-order__content-wrapper">
           <fieldset class="special-order__fieldset content-wrapper">
             <legend class="special-order__legend">
               <span class="special-order__text">Цвет</span>
@@ -119,8 +123,9 @@
               </p>
             </div>
           </fieldset>
+        </div>
 
-
+        <div class="special-order__content-wrapper">
           <fieldset class="special-order__fieldset content-wrapper">
             <legend class="special-order__legend">
               <span class="special-order__text">ФИО</span>
@@ -141,8 +146,9 @@
               <input class="special-order__text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
             </p>
           </fieldset>
+         </div>
 
-
+        <div class="special-order__content-wrapper">
           <fieldset class="special-order__fieldset content-wrapper">
             <label class="special-order__legend" for="phone">
               <span class="special-order__text">Тел</span>
@@ -160,14 +166,16 @@
               <svg></svg>
             </p>
           </fieldset>
+        </div>
 
-
+        <div class="special-order__content-wrapper">
           <fieldset class="special-order__fieldset content-wrapper">
             <legend class="special-order__legend">
               <span class="special-order__text">Доп</span>
             </legend>
             <textarea class="special-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
+        </div>
 
           <div class="special-order__submit">
             <p class="special-order__essential">*Поля обязательны для заполнения</p>

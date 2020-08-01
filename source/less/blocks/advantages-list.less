@@ -42,11 +42,68 @@
   }
 }
 
-.craft,
-.ecologie,
-.gift,
-.homeland,
-.likes,
-.scandinavian {
-  fill: @green-light;
+.advantages__list-item--ecologie {
+  &::before {
+    left: 8px;
+    top: 0;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-size: 32px 37px;
+  }
+}
+
+.advantages__list-item--scandinavian {
+  &::before {
+    left: 0;
+    top: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-size: 47px 27px;
+  }
+}
+
+.advantages__list-item--likes {
+  &::before {
+    left: 7px;
+    top: 6px;
+    width: 33px;
+    height: 28px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-size: 33px 28px;
+  }
+}
+
+.advantages__list-item--craft {
+  &::before {
+    left: 3px;
+    top: 3px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-size: 34px 34px;
+  }
+}
+
+.advantages__list-item--homeland {
+  &::before {
+    left: -5px;
+    top: 4px;
+    width: 54px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-size: 54px 23px;
+  }
+}
+
+.advantages__list-item--gift {
+  &::before {
+    left: 3px;
+    top: 2px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-size: 33px 32px;
+  }
 }
