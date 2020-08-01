@@ -1,0 +1,42 @@
+.site-navigation {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: 700;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    width: 52%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    border-bottom: 1px solid @grey-light;
+  }
+}
+
+.site-navigation a {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 27px 30px 27px 74px;
+  color: @black;
+  text-decoration: none;
+  background-color: @white;
+  box-shadow: 0 1px 0 @grey-light;
+  font-weight: bold;
+
+  &:hover {
+    color: @black;
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: @black;
+    opacity: 0.3;
+  }
+}

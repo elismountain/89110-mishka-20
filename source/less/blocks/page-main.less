@@ -1,0 +1,74 @@
+.page-main {
+  border-bottom: 1px solid @footer-grey;
+}
+
+.page-main__header {
+  position: relative;
+  padding-top: 71px;
+  padding-bottom: 76px;
+  background-color: @footer-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
+    padding-bottom: 102px;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+
+    @media (min-width: @tablet-width) {
+      content: "";
+      bottom: -12px;
+      height: 24px;
+      background-size: 768px 24px;
+      background-position-x: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: -17px;
+      height: 34px;
+      background-size: 1150px 34px;
+    }
+  }
+}
+
+.page-main__title {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @black;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.page-main__video {
+  margin-bottom: 57px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 104px;
+  }
+}
