@@ -1,13 +1,17 @@
 .content-wrapper {
   box-sizing: border-box;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 1150px;
+  width: 320px;
   padding-left: 30px;
   padding-right: 30px;
 
   @media (min-width: tablet-width) {
+    width: 768px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  @media (min-width: desktop-width) {
+    width: 1150px;
   }
 }

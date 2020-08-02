@@ -68,8 +68,8 @@ main<!DOCTYPE html>
   <main class="page-main">
     <h1 class="visually-hidden"> Интернет магазин Мишка </h1>
 
-    <section class="catalog content-wrapper">
-      <div class="catalog__content-wrapper">
+    <section class="catalog">
+      <div class="catalog__content-wrapper content-wrapper">
       <h2 class="catalog__title"> Милые штуки
         <br> ручной
         <br> работы для дома
@@ -88,40 +88,42 @@ main<!DOCTYPE html>
       </ul>
     </section>
 
-    <section class="promo content-wrapper">
-      <h2 class="promo__title"> Вязанные корзинки </h2>
-      <p class="promo__text"> Товар недели </p>
-      <div class="promo__content-wrapper">
-        <p class="promo__description">Экологически чистая пряжа,
-          <br> ручная работа. Доступны в шести
-          <br> расцветках, и
-          трех размерах.
-        </p>
-        <table class="table-specification promo__table">
-          <tr class="table-specification__row">
-            <td class="table-specification__cell">Цвет:</td>
-            <td class="table-specification__cell">«Тиффани»/серый</td>
-          </tr>
-          <tr class="table-specification__row">
-            <td class="table-specification__cell">Диаметр:</td>
-            <td class="table-specification__cell">25 см</td>
-          </tr>
-          <tr class="table-specification__row">
-            <td class="table-specification__cell">Высота:</td>
-            <td class="table-specification__cell">15 см</td>
-          </tr>
-        </table>
+    <section class="promo">
+      <div class="content-wrapper">
+        <h2 class="promo__title"> Вязанные корзинки </h2>
+        <p class="promo__text"> Товар недели </p>
+        <div class="promo__content-wrapper">
+          <p class="promo__description">Экологически чистая пряжа,
+            <br> ручная работа. Доступны в шести
+            <br> расцветках, и
+            трех размерах.
+          </p>
+          <table class="table-specification promo__table">
+            <tr class="table-specification__row">
+              <td class="table-specification__cell">Цвет:</td>
+              <td class="table-specification__cell">«Тиффани»/серый</td>
+            </tr>
+            <tr class="table-specification__row">
+              <td class="table-specification__cell">Диаметр:</td>
+              <td class="table-specification__cell">25 см</td>
+            </tr>
+            <tr class="table-specification__row">
+              <td class="table-specification__cell">Высота:</td>
+              <td class="table-specification__cell">15 см</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="promo__image-wrapper">
+          <picture>
+          <img class="promo__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка Тиффани">
+        </picture>
+        </div>
+
+        <div class="promo__price"> Цена: 990 руб. </div>
+
+        <button class="promo-button button"> Заказать </button>
       </div>
-
-      <div class="promo__image-wrapper">
-        <picture>
-        <img class="promo__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка Тиффани">
-      </picture>
-      </div>
-
-      <div class="promo__price"> Цена: 990 руб. </div>
-
-      <button class="promo-button button"> Заказать </button>
     </section>
 
     <section class="advantages content-wrapper">
@@ -202,7 +204,7 @@ main<!DOCTYPE html>
 
       <div class="contacts__map">
         <img class="map-image" src="img/map-mobile@1x.jpg" width="" height="" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" />
-      <iframe src="#" width="" height="" allowfullscreen></iframe>
+     <!--<iframe src="#" width="" height="" allowfullscreen></iframe>-->
     </div>
 
       <div class="contacts__button-wrapper">
