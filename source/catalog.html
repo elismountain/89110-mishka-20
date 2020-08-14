@@ -11,10 +11,13 @@
 <body class="page-body">
   <header class="page-header page-header--index">
     <nav class="main-navigation main-navigation--closed main-nav--nojs">
-        <a class="header-logo">
-          <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
-        </a>
-
+      <a class="header-logo" area-label="Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+      </picture>
+      </a>
         <button class="main-navigation__toggle main-navigation__toggle--off" type="button">
           <span class="visually-hidden"> Открыть меню</span>
         </button>
@@ -78,7 +81,11 @@
 
             <section class="catalog-product ">
               <a class="catalog-product__image" href="#">
-                <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" width="334px" height="334px" alt="Зайчик-попрыгайчик">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="334px" height="334px" alt="Зайчик-попрыгайчик">
+                </picture>
               </a>
 
               <div class="catalog-product__wrapper">
@@ -97,8 +104,14 @@
 
             <section class="catalog-product">
               <a class="catalog-product__image" href="#">
-                <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" width="334px" height="334px" alt="Корзинка для белья">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="334px" height="334px"
+                alt="Корзинка для белья">
+                </picture>
               </a>
+
               <div class="catalog-product__wrapper">
                 <h3 class="catalog-product__title">
                   <a class="catalog-product__link" href="#">Корзинка для белья</a>
@@ -115,7 +128,14 @@
 
             <section class="catalog-product">
               <a class="catalog-product__image" href="#">
-                <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" width="334px" height="334px" alt="Большая корзинка для игрушек"></a>
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" width="334px" height="334px" srcset="img/photo-toys-mobile@2x.jpg 2x"
+                alt="Большая корзинка для игрушек">
+              </picture>
+            </a>
+
               <div class="catalog-product__wrapper">
                 <h3 class="catalog-product__title">
                   <a class="catalog-product__link" href="#">Большая корзинка для игрушек</a>

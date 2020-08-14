@@ -11,9 +11,13 @@
 <body class="page-body">
   <header class="page-header page-header--index">
     <nav class="main-navigation main-navigation--closed main-nav--nojs">
-        <a class="header-logo">
-          <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
-        </a>
+      <a class="header-logo" area-label="Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+      </picture>
+      </a>
 
         <button class="main-navigation__toggle main-navigation__toggle--off" type="button">
           <span class="visually-hidden"> Открыть меню</span>
@@ -194,6 +198,47 @@
         </div>
 
         <div class="special-order__content-wrapper">
+          <fieldset class="special-order__fieldset content-wrapper">
+            <legend class="special-order__legend">
+              <span class="special-order__text">ФИО</span>
+            </legend>
+
+            <p class="special-order__input">
+              <label class="special-order__label" for="name">Имя:</label>
+              <input class="special-order__text" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+            </p>
+
+            <p class="special-order__input">
+              <label class="special-order__label" for="surname">Фамилия:</label>
+              <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+            </p>
+
+            <p class="special-order__input">
+              <label class="special-order__label" for="middlename">Отчество:</label>
+              <input class="special-order__text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
+            </p>
+          </fieldset>
+          </div>
+
+        <div class="special-order__content-wrapper">
+          <fieldset class="special-order__fieldset content-wrapper">
+            <label class="special-order__legend" for="phone">
+              <span class="special-order__text">Тел</span>
+            </label>
+            <p class="special-order__input">
+              <input class="special-order__text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <svg></svg>
+            </p>
+
+            <label class="special-order__legend" for="email">
+              <span class="special-order__text">E-mail</span>
+            </label>
+            <p class="special-order__input">
+              <input class="special-order__text" type="email" id="email" name="email" placeholder="Ваш Email*">
+              <svg></svg>
+            </p>
+          </fieldset>
+          
           <div class="content-wrapper">
             <fieldset class="special-order__fieldset">
               <legend class="special-order__legend">
