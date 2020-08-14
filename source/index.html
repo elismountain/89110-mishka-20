@@ -1,4 +1,4 @@
-main<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -72,8 +72,8 @@ main<!DOCTYPE html>
   <main class="page-main">
     <h1 class="visually-hidden"> Интернет магазин Мишка </h1>
 
-    <section class="catalog content-wrapper">
-      <div class="catalog__content-wrapper">
+    <section class="catalog">
+      <div class="catalog__content-wrapper content-wrapper">
       <h2 class="catalog__title"> Милые штуки
         <br> ручной
         <br> работы для дома
@@ -133,81 +133,58 @@ main<!DOCTYPE html>
       <button class="promo-button button"> Заказать </button>
     </section>
 
-    <section class="advantages content-wrapper">
-      <h2 class="advantages__title"> Коротко о нас: </h2>
+    <section class="advantages">
+      <div class="content-wrapper">
+        <h2 class="advantages__title"> Коротко о нас: </h2>
+        <ul class="advantages__list">
+          <li class="advantages__list-item advantages__list-item--ecologie">
+            <span> Экологически чистые материалы </span >
+          </li>
 
-      <ul class="advantages__list advantages-list">
-        <li class="advantages__list-item advantages__list-item--ecologie">
-          <span> Экологически чистые материалы </span >
-        </li>
+          <li class="advantages__list-item advantages__list-item--scandinavian">
+            <span> Скандинавский стиль по российской цене </span>
+          </li>
 
-        <li class="advantages__list-item advantages__list-item--scandinavian">
-          <span> Скандинавский стиль по российской цене </span>
-        </li>
+          <li class="advantages__list-item advantages__list-item--likes">
+            <span> Увеличивает лайки на фотографиях </span>
+          </li>
 
-        <li class="advantages__list-item advantages__list-item--likes">
-          <span> Увеличивает лайки на фотографиях </span>
-        </li>
+          <li class="advantages__list-item advantages__list-item--craft">
+            <span> Связано вручную с любовью и умилением </span>
+          </li>
 
-        <li class="advantages__list-item advantages__list-item--craft">
-          <span> Связано вручную с любовью и умилением </span>
-        </li>
+          <li class="advantages__list-item advantages__list-item--homeland">
+            <span> Поддержка отечественного производителя </span>
+          </li>
 
-        <li class="advantages__list-item advantages__list-item--homeland">
-          <span> Поддержка отечественного производителя </span>
-        </li>
-
-        <li class="advantages__list-item advantages__list-item--gift">
-          <span> Поставляется в подарочной упаковке
-          </span>
-        </li>
-      </ul>
+          <li class="advantages__list-item advantages__list-item--gift">
+            <span> Поставляется в подарочной упаковке
+            </span>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="review content-wrapper">
-      <h2 class="review__title"> Отзывы </h2>
-      <p class="review__text">
-        Я молодая мама, но всё равно
-        <br> фотографии не набирали и близко
-        <br> такого количества лайков, как у
-        <br> популярных инстамамочек. В
-        <br> отчаянии, я накупила аксессуаров
-        <br>
-        и игрушек в Мишке, и мои
-        <br> фотографии сразу стали более
-        <br> стильными, а также набирают
-        больше лайков!
-      </p>
-
-      <cite class="review__author">
-        <span> Анастасия Красильникова </span>
-        <a class="review__author-email"> @misssssiskras </a>
-      </cite>
-
-      <div class="review__nav">
-        <button class="review__nav-button" type="button" aria-label="Назад"></button>
-        <button class="review__nav-button" type="button" aria-label="Вперёд"></button>
-      </div>
-
-      <button class="review__button button"> Написать </button>
-    </section>
-
-    <section class="contacts content-wrapper">
-      <h2 class="contacts__title"> Контакты </h2>
-
-      <div class="contacts-wrapper">
-        <p class="contacts__email">
-          <a class="contacts__email-link" href="#"> info@mimimishkashop.ru </a>
+    <section class="review">
+      <div class="content-wrapper">
+        <h2 class="review__title"> Отзывы </h2>
+        <p class="review__text">
+          Я молодая мама, но всё равно
+          фотографии не набирали и близко
+          такого количества лайков, как у
+          популярных инстамамочек. В
+          отчаянии, я накупила аксессуаров
+          и игрушек в Мишке, и мои
+          фотографии сразу стали более
+          стильными, а также набирают
+          больше лайков!
         </p>
 
-        <p class="contacts__address">
-          г. Санкт-Петербург,
-          <br>
-          ул. Большая Конюшенная,
-          <br>
-          д. 19/8, офис 101
-        </p>
-      </div>
+        <cite class="review__author">
+          <span> Анастасия Красильникова </span>
+          <a class="review__author-email"> @misssssiskras </a>
+        </cite>
+
 
       <div class="contacts__map map">
         <picture>
@@ -217,9 +194,42 @@ main<!DOCTYPE html>
         </picture>
       </div>
 
-      <div class="contacts__button-wrapper">
-        <a class="contacts__button button" href="#">Напишите нам</a>
+        <div class="review__nav">
+          <button class="review__nav-button" type="button" aria-label="Назад"></button>
+          <button class="review__nav-button" type="button" aria-label="Вперёд"></button>
+        </div>
+
+
+        <button class="review__button button"> Написать </button>
       </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__content-wrapper content-wrapper">
+        <h2 class="contacts__title"> Контакты </h2>
+
+        <div class="contacts-wrapper">
+          <p class="contacts__email">
+            <a class="contacts__email-link" href="#"> info@mimimishkashop.ru </a>
+          </p>
+
+          <p class="contacts__address">
+            г. Санкт-Петербург,
+            <br>
+            ул. Большая Конюшенная,
+            <br>
+            д. 19/8, офис 101
+          </p>
+          </div>
+        </div>
+
+        <div class="contacts__map">
+          <img class="map-image" src="img/map-mobile@1x.jpg" width="" height="" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" />
+        <!--<iframe src="#" width="" height="" allowfullscreen></iframe>-->
+        </div>
+        <div class="contacts__button-wrapper">
+          <a class="contacts__button button" href="#">Напишите нам</a>
+        </div>
     </section>
   </main>
 

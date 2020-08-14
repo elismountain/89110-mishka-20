@@ -1,5 +1,7 @@
 .contacts {
   position: relative;
+  padding-top: 17px;
+  padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     padding-top: 21px;
@@ -10,14 +12,23 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 69px 50px 104px;
     width: 1050px;
   }
 }
 
 .contacts-wrapper {
+  margin: 25px auto 0;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @media (min-width: @desktop-width) {
-    margin: 0;
-    width: 525px;
+    margin-top: 48px;
+    margin-bottom: 42px;
   }
 }
 
@@ -64,7 +75,5 @@
     top: 69px;
     right: 50px;
     margin-bottom: 0;
-    width: 525px;
-    height: 457px;
   }
 }
