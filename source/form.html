@@ -9,9 +9,13 @@
 <body class="page-body">
   <header class="page-header">
     <nav class="main-navigation main-navigation--closed main-nav--nojs">
-        <a class="header-logo">
-          <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
-        </a>
+      <a class="header-logo" area-label="Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+      </picture>
+      </a>
 
         <button class="main-navigation__toggle main-navigation__toggle--off" type="button">
           <span class="visually-hidden"> Открыть меню</span>
@@ -146,7 +150,7 @@
               <input class="special-order__text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
             </p>
           </fieldset>
-         </div>
+          </div>
 
         <div class="special-order__content-wrapper">
           <fieldset class="special-order__fieldset content-wrapper">
