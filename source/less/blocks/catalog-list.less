@@ -2,34 +2,83 @@
   position: relative;
   list-style: none;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-list__item {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
 }
 
 .catalog-list__link {
   position: relative;
   display: block;
+  padding: 26px 30px 29px;
   font-size: 19px;
   font-weight: 700;
   color: @white;
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
-    position: relative;
-    display: block;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 700;
-    color: @white;
-    text-decoration: none;
+    padding: 28px 35px 31px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    opacity: 0.5;
   }
 }
 
-.catalog-list__link-interior {
-  background-color: @green-light;
+.catalog-list__link--interior {
+  background-color: @green-font;
+
+  &::before {
+    background-color: @green-light;
+  }
+
+  &::after {
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    background-size: 40px 62px;
+    background-color: @green-light;
+  }
 }
 
-.catalog-list__link-toys {
+.catalog-list__link--toys {
   background-color: @green-dark;
+
+  &::before {
+    background-color: @green-dark;
+  }
+
+  &::after {
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    background-size: 60px 60px;
+    background-color: @green-dark;
+  }
 }
+
 
 .catalog__list-text {
   display: block;

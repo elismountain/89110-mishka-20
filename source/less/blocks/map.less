@@ -1,0 +1,21 @@
+.map {
+  position: relative;
+  height: 457px;
+}
+
+.map-image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 457px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
+}
