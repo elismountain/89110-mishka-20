@@ -47,6 +47,29 @@
     font-size: 53px;
     line-height: 57px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    width: 47px;
+    height: 82px;
+    background-image: url("../img/icon-flag.svg");
+    background-size: image-size("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -112px;
+      right: auto;
+    }
+  }
 }
 
 .contacts__email {
@@ -63,6 +86,18 @@
   }
 }
 
+.contacts__email-link {
+  color: @grey-basic;
+
+  &:hover {
+    color: @footer-green;
+  }
+
+  &:active {
+    color: @footer-green;
+  }
+}
+
 .contacts__map {
   margin-bottom: 39px;
 
@@ -71,7 +106,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
     top: 69px;
     right: 50px;
     margin-bottom: 0;

@@ -33,9 +33,6 @@
   }
 }
 
-// user-navigation__search--search
-//user-navigation__search--busket
-
 .user-navigation__search-image {
   position: absolute;
   left: 30px;
@@ -43,10 +40,18 @@
   fill: @black;
   opacity: 0.2;
 
+  &:hover {
+    fill: @green-font;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: @green-font;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     top: 50%;
-    fill: @black;
-    opacity: 0.2;
     left: 32px;
   }
 }
@@ -63,5 +68,17 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     white-space: nowrap;
+  }
+}
+
+.user-navigation__basket-text {
+  color: @black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

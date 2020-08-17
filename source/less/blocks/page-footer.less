@@ -7,6 +7,7 @@
   @media (min-width: @tablet-width) {
     padding-top: 48px;
     padding-bottom: 46px;
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,9 +44,12 @@
 }
 
 .page-footer__copyright-text {
+  display: flex;
+  align-items: center;
   font-size: 19px;
+  line-height: 18px;
   font-weight: 700;
-  line-height: 19px;
+  padding-right: 25px;
 }
 
 .page-footer__copyright-link {
@@ -55,19 +59,19 @@
   padding: 8px 0 7px;
   color: @black;
   text-decoration: none;
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.page-footer__copyright-link:hover &,
-.page-footer__copyright-link:active & {
-  fill: @footer-green;
 }
 
 .page-footer__copyright-image {
   width: 27px;
   height: 34px;
   fill: @green-font;
+
+  &:hover {
+    fill: @footer-green;
+  }
+
+  &:active {
+    fill: @footer-green;
+    opacity: 0.3;
+  }
 }
