@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Мишка — интернет-магазин игрушек</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -145,30 +147,34 @@
         </div>
       </header>
 
-
-      <form class="special-order" action="https://echo.htmlacademy.ru" method="post">
+      <div class="content-wrapper">
+        <form class="special-order" action="https://echo.htmlacademy.ru" method="post">
         <p class="special-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
-          простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+      </div>
 
         <div class="special-order__content-wrapper">
-          <fieldset class="special-order__fieldset content-wrapper">
-            <legend class="special-order__legend">
-              <span class="special-order__text">Тип</span>
-            </legend>
+          <div class="content-wrapper">
+            <fieldset class="special-order__fieldset">
+              <legend class="special-order__legend">
+                <span class="special-order__text">Тип</span>
+              </legend>
 
-            <div class="special-order__content">
-              <p class="special-order__input">
-                <input class="special-order__radio visually-hidden" type="radio" id="interior" name="type" value="1"
-                checked>
-                <label class="special-order__label-radio" for="interior">Аксессуар для интерьера</label>
-              </p>
+              <div class="special-order__content">
+                <p class="special-order__input">
+                  <input class="special-order__radio visually-hidden" type="radio" id="interior" name="type" value="1"
+                  checked>
+                  <label class="special-order__label-radio" for="interior">Аксессуар для интерьера</label>
+                </p>
 
-              <p class="special-order__input">
-                <input class="special-order__radio visually-hidden" type="radio" id="toys" value="2" name="type">
-                <label class="special-order__label-radio" for="toys">Детская игрушка</label>
-              </p>
-            </div>
-          </fieldset>
+                <p class="special-order__input">
+                  <input class="special-order__radio visually-hidden" type="radio" id="toys" value="2" name="type">
+                  <label class="special-order__label-radio" for="toys">Детская игрушка</label>
+                </p>
+              </div>
+            </fieldset>
+          </div>
         </div>
 
         <div class="special-order__content--wrapper">
@@ -177,40 +183,89 @@
               <span class="special-order__text">Цвет</span>
             </legend>
 
-            <div class="special-order__content">
+      
+              <div class="special-order__content">
+                <p class="special-order__input">
+                  <input class="special-order__checkbox visually-hidden" type="checkbox" id="white" name="white"
+                  checked>
+                  <label class="special-order__label-checkbox" for="white">Белый</label>
+                </p>
+
+                <p class="special-order__input">
+                  <input class="special-order__checkbox visually-hidden" type="checkbox" id="gray" name="gray"
+                  checked>
+                  <label class="special-order__label-checkbox" for="gray">Серый</label>
+                </p>
+
+                <p class="special-order__input">
+                  <input class="special-order__checkbox visually-hidden" type="checkbox" id="tiffany" name="tiffany">
+                  <label class="special-order__label-checkbox" for="tiffany">«Тиффани»</label>
+                </p>
+
+                <p class="special-order__input">
+                  <input class="special-order__checkbox visually-hidden" type="checkbox" id="black" name="black">
+                  <label class="special-order__label-checkbox" for="black">Черный</label>
+                </p>
+
+                <p class="special-order__input">
+                  <input class="special-order__checkbox visually-hidden" type="checkbox" id="pink" name="pink">
+                  <label class="special-order__label-checkbox" for="pink">Розовый</label>
+                </p>
+
+                <p class="special-order__input">
+                  <input class="special-order__checkbox visually-hidden" type="checkbox" id="orange" name="orange">
+                  <label class="special-order__label-checkbox" for="orange">Оранжевый</label>
+                </p>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="special-order__content-wrapper">
+          <div class="content-wrapper">
+            <fieldset class="special-order__fieldset">
+              <legend class="special-order__legend">
+                <span class="special-order__text">ФИО</span>
+              </legend>
+
               <p class="special-order__input">
-                <input class="special-order__checkbox visually-hidden" type="checkbox" id="white" name="white"
-                checked>
-                <label class="special-order__label-checkbox" for="white">Белый</label>
+                <label class="special-order__label" for="name">Имя:</label>
+                <input class="special-order__text" type="text" id="name" name="name" placeholder="Введите ваше имя*">
               </p>
 
               <p class="special-order__input">
-                <input class="special-order__checkbox visually-hidden" type="checkbox" id="gray" name="gray"
-                checked>
-                <label class="special-order__label-checkbox" for="gray">Серый</label>
+                <label class="special-order__label" for="surname">Фамилия:</label>
+                <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
               </p>
 
               <p class="special-order__input">
-                <input class="special-order__checkbox visually-hidden" type="checkbox" id="tiffany" name="tiffany">
-                <label class="special-order__label-checkbox" for="tiffany">«Тиффани»</label>
+                <label class="special-order__label" for="middlename">Отчество:</label>
+                <input class="special-order__text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
+              </p>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="special-order__content-wrapper">
+          <div class="content-wrapper">
+            <fieldset class="special-order__fieldset">
+              <label class="special-order__legend" for="phone">
+                <span class="special-order__text">Тел</span>
+              </label>
+              <p class="special-order__input">
+                <input class="special-order__text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <svg></svg>
               </p>
 
+              <label class="special-order__legend" for="email">
+                <span class="special-order__text">E-mail</span>
+              </label>
               <p class="special-order__input">
-                <input class="special-order__checkbox visually-hidden" type="checkbox" id="black" name="black">
-                <label class="special-order__label-checkbox" for="black">Черный</label>
+                <input class="special-order__text" type="email" id="email" name="email" placeholder="Ваш Email*">
+                <svg></svg>
               </p>
-
-              <p class="special-order__input">
-                <input class="special-order__checkbox visually-hidden" type="checkbox" id="pink" name="pink">
-                <label class="special-order__label-checkbox" for="pink">Розовый</label>
-              </p>
-
-              <p class="special-order__input">
-                <input class="special-order__checkbox visually-hidden" type="checkbox" id="orange" name="orange">
-                <label class="special-order__label-checkbox" for="orange">Оранжевый</label>
-              </p>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
         </div>
 
         <div class="special-order__content-wrapper">
@@ -258,20 +313,22 @@
               </svg>
             </p>
           </fieldset>
+          
+          <div class="content-wrapper">
+            <fieldset class="special-order__fieldset">
+              <legend class="special-order__legend">
+                <span class="special-order__text">Доп</span>
+              </legend>
+              <textarea class="special-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+          </div>
         </div>
 
-        <div class="special-order__content-wrapper">
-          <fieldset class="special-order__fieldset content-wrapper">
-            <legend class="special-order__legend">
-              <span class="special-order__text">Доп</span>
-            </legend>
-            <textarea class="special-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
-        </div>
 
-          <div class="special-order__submit">
-            <p class="special-order__essential">*Поля обязательны для заполнения</p>
+        <div class="special-order__submit content-wrapper">
+          <p class="special-order__essential">*Поля обязательны для заполнения</p>
             <button class="special-order__button button" type="submit">Отправить заказ</button>
+          
           </form>
         </main>
 
