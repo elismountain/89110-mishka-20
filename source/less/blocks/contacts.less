@@ -18,14 +18,17 @@
 }
 
 .contacts-wrapper {
-  padding-top: 4px;
-  padding-bottom: 7px;
+  margin: 25px auto 0;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    padding-top: 27px;
-    padding-left: 175px;
-    width: 525px;
+    margin-top: 48px;
+    margin-bottom: 42px;
   }
 }
 
@@ -106,7 +109,5 @@
     top: 69px;
     right: 50px;
     margin-bottom: 0;
-    width: 525px;
-    height: 457px;
   }
 }
