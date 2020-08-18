@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 292px;
+  padding: 14px 10px;
+  margin: 0 auto;
+  border: 2px solid @grey-basic;
+  color: @grey-basic;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @white;
+  text-decoration: none;
+
+  &:hover {
+    background: @grey-basic;
+    color: @white;
+  }
+
+  &:active {
+    background: @grey-basic;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--green {
+    background: @green-font;
+    color: @white;
+  }
+}
