@@ -80,14 +80,14 @@
         </p>
       </div>
 
-        <div class="special-order__content-wrapper">
+        <div class="special-order__block-wrapper">
           <div class="content-wrapper">
             <fieldset class="special-order__fieldset">
               <legend class="special-order__legend">
                 <span class="special-order__text">Тип</span>
               </legend>
 
-              <div class="special-order__content">
+              <div class="special-order__content-wrapper">
                 <p class="special-order__input">
                   <input class="special-order__radio visually-hidden" type="radio" id="interior" name="type" value="1"
                   checked>
@@ -104,7 +104,7 @@
         </div>
 
 
-        <div class="special-order__content-wrapper">
+        <div class="special-order__block-wrapper special-order__block-wrapper--gray">
           <div class="content-wrapper">
             <fieldset class="special-order__fieldset">
               <legend class="special-order__legend">
@@ -112,7 +112,7 @@
               </legend>
 
 
-              <div class="special-order__content">
+              <div class="special-order__content-wrapper">
                 <p class="special-order__input">
                   <input class="special-order__checkbox visually-hidden" type="checkbox" id="white" name="white"
                   checked>
@@ -149,105 +149,71 @@
           </div>
         </div>
 
-        <div class="special-order__content-wrapper">
+        <div class="special-order__block-wrapper">
           <div class="content-wrapper">
             <fieldset class="special-order__fieldset">
               <legend class="special-order__legend">
                 <span class="special-order__text">ФИО</span>
               </legend>
 
-              <p class="special-order__input">
-                <label class="special-order__label" for="name">Имя:</label>
-                <input class="special-order__text" type="text" id="name" name="name" placeholder="Введите ваше имя*">
-              </p>
+              <div ="special-order__content-wrapper">
+                <p class="special-order__input">
+                  <label class="special-order__label" for="name">Имя:</label>
+                  <input class="special-order__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+                </p>
 
-              <p class="special-order__input">
-                <label class="special-order__label" for="surname">Фамилия:</label>
-                <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
-              </p>
+                <p class="special-order__input">
+                  <label class="special-order__label" for="surname">Фамилия:</label>
+                  <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+                </p>
 
-              <p class="special-order__input">
-                <label class="special-order__label" for="middlename">Отчество:</label>
-                <input class="special-order__text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
+                <p class="special-order__input">
+                  <label class="special-order__label" for="middlename">Отчество:</label>
+                  <input class="special-order__input-text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
               </p>
-            </fieldset>
-          </div>
+            </div>
+          </fieldset>
         </div>
+      </div>
 
-        <div class="special-order__content-wrapper">
+        <div class="special-order__block-wrapper special-order__block-wrapper--gray">
           <div class="content-wrapper">
-            <fieldset class="special-order__fieldset">
+          <fieldset class="special-order__fieldset">
+            <div class="special-order__content-wrapper">
               <label class="special-order__legend" for="phone">
-                <span class="special-order__text">Тел</span>
+                <span class="special-order__text"> Тел </span>
               </label>
               <p class="special-order__input">
-                <input class="special-order__text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                <svg></svg>
+                <input class="special-order__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <svg class="special-order__phone" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </p>
 
               <label class="special-order__legend" for="email">
-                <span class="special-order__text">E-mail</span>
+                <span class="special-order__text"> E-mail </span>
               </label>
               <p class="special-order__input">
-                <input class="special-order__text" type="email" id="email" name="email" placeholder="Ваш Email*">
-                <svg></svg>
+                <input class="special-order__input-text" type="email" id="email" name="email" placeholder="Ваш Email*">
+                <svg class="special-order__email" width="32px" height="32px">
+                  <use xlink:href="img/sprite.svg#email-form"></use>
+                </svg>
               </p>
-            </fieldset>
           </div>
+          </fieldset>
         </div>
+      </div>
 
-        <div class="special-order__content-wrapper content-wrapper">
-          <fieldset class="special-order__fieldset">
-            <legend class="special-order__legend">
-              <span class="special-order__text">ФИО</span>
-            </legend>
-
-            <p class="special-order__input">
-              <label class="special-order__label" for="name">Имя:</label>
-              <input class="special-order__text" type="text" id="name" name="name" placeholder="Введите ваше имя*">
-            </p>
-
-            <p class="special-order__input">
-              <label class="special-order__label" for="surname">Фамилия:</label>
-              <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
-            </p>
-
-            <p class="special-order__input">
-              <label class="special-order__label" for="middlename">Отчество:</label>
-              <input class="special-order__text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
-            </p>
-          </fieldset>
-          </div>
-
-        <div class="special-order__content-wrapper content-wrapper">
-          <fieldset class="special-order__fieldset">
-            <label class="special-order__legend" for="phone">
-              <span class="special-order__text">Тел</span>
-            </label>
-            <p class="special-order__input">
-              <input class="special-order__text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-              <svg class="special-order__phone" width="25" height="24">
-                <use xlink:href="img/sprite.svg#icon-phone"></use>
-              </svg>
-            </p>
-
-            <label class="special-order__legend" for="email">
-              <span class="special-order__text">E-mail</span>
-            </label>
-            <p class="special-order__input">
-              <input class="special-order__text" type="email" id="email" name="email" placeholder="Ваш Email*">
-              <svg class="special-order__email" width="32px" height="32px">
-                <use xlink:href="img/sprite.svg#email-form"></use>
-              </svg>
-            </p>
-          </fieldset>
-
-          <div class="content-wrapper">
+      <div class="special-order__block-wrapper">
+        <div class="content-wrapper">
             <fieldset class="special-order__fieldset">
               <legend class="special-order__legend">
                 <span class="special-order__text">Доп</span>
               </legend>
-              <textarea class="special-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+              <div class="special-order__content-wrapper">
+                <textarea class="special-order__input-text special-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </fieldset>
           </div>
         </div>

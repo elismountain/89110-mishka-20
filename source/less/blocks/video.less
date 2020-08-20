@@ -24,6 +24,22 @@
   margin-bottom: 24px;
   padding-left: 89px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    order: 1;
+    margin-top: 37px;
+    margin-bottom: 5px;
+    padding-left: 106px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 79px;
+    padding-top: 38px;
+    padding-right: 57px;
+    margin-top: 57px;
+    margin-bottom: 6px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -37,28 +53,12 @@
     background-size: 32px 32px;
 
     @media (min-width: @tablet-width) {
-      left: 10px;
+      left: 40px;
       top: 10px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 0;
-    }
-
-    @media (min-width: @tablet-width) {
-      font-size: 20px;
-      order: 1;
-      margin-top: 37px;
-      margin-bottom: 5px;
-      padding-left: 106px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 79px;
-      padding-top: 38px;
-      padding-right: 57px;
-      margin-top: 57px;
-      margin-bottom: 6px;
+      left: 80px;
     }
   }
 }
