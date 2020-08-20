@@ -40,6 +40,22 @@
   }
 }
 
+.special-order__block-wrapper {
+  &--gray {
+    @media (min-width: @tablet-width) {
+      background-color: @footer-grey;
+    }
+  }
+}
+
+.special-order__legend {
+  color: @green-font;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
 .special-order__textarea {
   display: block;
   margin-top: 3px;
@@ -52,15 +68,37 @@
   }
 }
 
+.special-order__input-text {
+  font-size: 17px;
+  line-height: 18px;
+}
+
 .special-order__submit {
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 3px;
+    padding-bottom: 4px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 225px 2px;
+  }
+}
+
+.special-order__essential {
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
