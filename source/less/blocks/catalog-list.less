@@ -2,8 +2,12 @@
   position: relative;
   list-style: none;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .catalog-list__item {
