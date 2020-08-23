@@ -55,6 +55,11 @@
 .review__text {
   margin-top: 16px;
   margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 30px;
+  color: @grey-basic;
+  font-family: "Open Sans", "Arial", sans-serif;
+
 
   @media (min-width: @tablet-width) {
     margin-top: 18px;
@@ -112,6 +117,37 @@
 
 .review__nav-button {
   position: relative;
+  padding: 0;
   box-sizing: border-box;
   width: 50%;
+  height: 52px;
+  border: 1px solid @grey-light;
+
+  @media (min-width: @tablet-width) {
+    border: 0;
+  }
+
+  &--previous {
+    &::after {
+      background-image: url("../img/icon-left-arrow.svg");
+    }
+  }
+
+  &--next {
+    &::after {
+      background-image: url("../img/icon-right-arrow.svg");
+    }
+  }
+}
+
+.review__button {
+  @media (min-width: @tablet-width) {
+    margin-top: 18px;
+    margin-right: 0;
+    width: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
+  }
 }
