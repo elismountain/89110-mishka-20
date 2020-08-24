@@ -1,10 +1,9 @@
 .button {
   display: block;
   box-sizing: border-box;
-  width: 100%;
   max-width: 292px;
   padding: 14px 10px;
-  margin: 0 auto;
+  //margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   border: 2px solid @grey-basic;
   color: @grey-basic;
@@ -33,10 +32,13 @@
 }
 
 .review__button {
+  height: 52px;
+  width: 260px;
+
   @media (min-width: @tablet-width) {
-    margin-top: 18px;
-    margin-right: 0;
     width: 175px;
+    grid-area: review__button;
+    margin-left: 200px;
   }
 
   @media (min-width: @desktop-width) {

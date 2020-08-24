@@ -4,15 +4,20 @@
   padding-bottom: 51px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    //display: flex;
+    //flex-wrap: wrap;
+    //align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 127px;
     background-image: url("../img/review@1x.jpg");
     background-size: image-size("../img/review@1x.jpg");
     background-position: left top;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "review__title review__button" "review__text review__text" "review__author review__nav";
   }
 
   @media (min-width: @desktop-width) {
@@ -49,6 +54,7 @@
 .review__title {
   @media (min-width: @tablet-width) {
     max-width: 300px;
+    grid-area: review__title;
   }
 }
 
@@ -65,6 +71,7 @@
     margin-top: 18px;
     margin-bottom: 58px;
     font-size: 17px;
+    grid-area: review__text;
   }
 
   @media (min-width: @desktop-width) {
@@ -77,6 +84,10 @@
   font-size: 17px;
   font-style: normal;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    grid-area: review__author;
+  }
 }
 
 .review__author span {
@@ -105,13 +116,9 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     right: 50px;
-    bottom: 134px;
     margin: 0;
     width: 175px;
-  }
-
-  @media (min-width: @desktop-width) {
-    bottom: 189px;
+    grid-area: review__nav;
   }
 }
 
