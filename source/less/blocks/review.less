@@ -4,15 +4,20 @@
   padding-bottom: 51px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    //display: flex;
+    //flex-wrap: wrap;
+    //align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 127px;
     background-image: url("../img/review@1x.jpg");
     background-size: image-size("../img/review@1x.jpg");
     background-position: left top;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "review__title review__button" "review__text review__text" "review__author review__nav";
   }
 
   @media (min-width: @desktop-width) {
@@ -36,34 +41,56 @@
   @media (min-width: @tablet-width) {
     height: 17px;
     background-size: 768px 17px;
+    bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
     left: 50px;
     right: 50px;
     height: 23px;
-    background-size: 1050px 21px;
+    background-size: 1050px 24px;
   }
 }
 
 .review__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: "Open Sans", "Arial", sans-serif;
+
   @media (min-width: @tablet-width) {
     max-width: 300px;
+    grid-area: review__title;
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
 .review__text {
   margin-top: 16px;
   margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 30px;
+  color: @grey-basic;
+  font-family: "Open Sans", "Arial", sans-serif;
+
 
   @media (min-width: @tablet-width) {
-    margin-top: 18px;
+    margin-top: -25px;
     margin-bottom: 58px;
     font-size: 17px;
+    grid-area: review__text;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 38px;
+    margin-top: 10px;
   }
 }
 
@@ -72,6 +99,10 @@
   font-size: 17px;
   font-style: normal;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    grid-area: review__author;
+  }
 }
 
 .review__author span {
@@ -99,19 +130,34 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 50px;
-    bottom: 134px;
+    right: 0;
     margin: 0;
     width: 175px;
-  }
-
-  @media (min-width: @desktop-width) {
-    bottom: 189px;
+    grid-area: review__nav;
   }
 }
 
 .review__nav-button {
   position: relative;
+  padding: 0;
   box-sizing: border-box;
   width: 50%;
+  height: 52px;
+  border: 1px solid @grey-light;
+
+  @media (min-width: @tablet-width) {
+    border: 0;
+  }
+
+  &--previous {
+    &::after {
+      background-image: url("../img/icon-left-arrow.svg");
+    }
+  }
+
+  &--next {
+    &::after {
+      background-image: url("../img/icon-right-arrow.svg");
+    }
+  }
 }

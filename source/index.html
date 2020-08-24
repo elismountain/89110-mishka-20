@@ -1,4 +1,4 @@
-main<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -12,13 +12,13 @@ main<!DOCTYPE html>
 
   <header class="page-header page-header--index">
     <nav class="main-navigation main-navigation--closed main-nav--nojs">
-        <a class="header-logo" area-label="Мишка">
+      <!--  <a class="header-logo" area-label="Мишка">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
         </picture>
-        </a>
+      </a> -->
 
         <button class="main-navigation__toggle main-navigation__toggle--off" type="button">
           <span class="visually-hidden"> Открыть меню</span>
@@ -178,30 +178,39 @@ main<!DOCTYPE html>
       </cite>
 
       <div class="review__nav">
-        <button class="review__nav-button" type="button" aria-label="Назад"></button>
-        <button class="review__nav-button" type="button" aria-label="Вперёд"></button>
+        <button class="review__nav-button reviews__nav-button--previous" type="button" aria-label="Назад"></button>
+        <button class="review__nav-button reviews__nav-button--next " type="button" aria-label="Вперёд"></button>
       </div>
 
       <button class="review__button button"> Написать </button>
     </section>
 
     <section class="contacts content-wrapper">
-      <h2 class="contacts__title"> Контакты </h2>
-
       <div class="contacts-wrapper">
-        <p class="contacts__email">
-          <span> e-mail: </span>
-          <a class="contacts__email-link" href="#"> info@mimimishkashop.ru </a>
-        </p>
-
-        <div> адрес: </div>
-        <p class="contacts__address">
-          г. Санкт-Петербург,
-          <br>
-          ул. Большая Конюшенная,
-          <br>
-          д. 19/8, офис 101
-        </p>
+        <h2 class="contacts__title"> Контакты </h2>
+      <!--  <div class="email">
+          <div class="contacts__list-term ">e-mail:</div>
+          <div class="contacts__list-description">
+            <a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+        </div>
+          <div class="adress">
+            <div class="contacts__list-term">адрес:</div>
+            <div class="contacts__list-description">
+              г. Санкт-Петербург,
+              ул. Большая Конюшенная,
+              д. 19/8, офис 101
+            </div>
+          </div> -->
+        <dl class="contacts__list">
+          <dt class="contacts__list-term">e-mail:</dt>
+          <dd class="contacts__list-description"><a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          <dt class="contacts__list-term">адрес:</dt>
+          <dd class="contacts__list-description">
+            г. Санкт-Петербург,<br>
+            ул. Большая Конюшенная,<br>
+            д. 19/8, офис 101</dd>
+        </dl>
       </div>
 
       <div class="contacts__map map">
