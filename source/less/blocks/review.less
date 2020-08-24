@@ -41,20 +41,34 @@
   @media (min-width: @tablet-width) {
     height: 17px;
     background-size: 768px 17px;
+    bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
     left: 50px;
     right: 50px;
     height: 23px;
-    background-size: 1050px 21px;
+    background-size: 1050px 24px;
   }
 }
 
 .review__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: "Open Sans", "Arial", sans-serif;
+
   @media (min-width: @tablet-width) {
     max-width: 300px;
     grid-area: review__title;
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -68,7 +82,7 @@
 
 
   @media (min-width: @tablet-width) {
-    margin-top: 18px;
+    margin-top: -25px;
     margin-bottom: 58px;
     font-size: 17px;
     grid-area: review__text;
@@ -76,6 +90,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 38px;
+    margin-top: 10px;
   }
 }
 
@@ -115,7 +130,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 50px;
+    right: 0;
     margin: 0;
     width: 175px;
     grid-area: review__nav;
