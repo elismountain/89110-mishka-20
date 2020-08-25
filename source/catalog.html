@@ -72,15 +72,13 @@
 
       <main class="page-main page-main__catalog">
         <header class="page-main__header">
-          <div class="content-wrapper">
+          <div class="page-main__header-wrapper">
             <h1 class="page-main__title">Каталог товаров</h1>
           </div>
         </header>
 
-        <div class="content-wrapper">
-          <div class="catalog-result">
-
-            <section class="catalog-product ">
+        <div class="catalog-result">
+          <section class="catalog-product ">
               <a class="catalog-product__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
@@ -108,8 +106,8 @@
               </div>
             </section>
 
-            <section class="catalog-product">
-              <a class="catalog-product__image" href="#">
+          <section class="catalog-product">
+            <a class="catalog-product__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
@@ -137,7 +135,7 @@
               </div>
             </section>
 
-            <section class="catalog-product">
+          <section class="catalog-product">
               <a class="catalog-product__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
@@ -145,10 +143,9 @@
                   <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                  <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" width="334px" height="334px" srcset="img/photo-toys-mobile@2x.jpg 2x"
-                alt="Большая корзинка для игрушек">
-              </picture>
-            </a>
+                  <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" width="334px" height="334px" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+                </picture>
+              </a>
 
               <div class="catalog-product__wrapper">
                 <h3 class="catalog-product__title">
@@ -165,11 +162,11 @@
                 </div>
               </div>
             </section>
-          </div>
         </div>
 
-        <div class="content-wrapper">
-          <section class="page-main__video video">
+
+        <div class="video-wrapper">
+          <section class="video page-main__video ">
             <div class="video__content-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
@@ -184,16 +181,15 @@
 
             <div class="video__description-wrapper">
               <h2 class="video__title">Процесс производства</h2>
-              <p class="video__description">По просьбам наших любимых  фолловеров мы сняли для вас  подробное видео о том,
-                  как появляются наши товары.</p>
-                  <a class="video__button button" href="#">Сделать заказ</a>
+              <p class="video__description">По просьбам наших любимых  фолловеров мы сняли для вас  подробное видео о том, как появляются наши товары.</p>
+              <a class="video__button button" href="#">Сделать заказ</a>
             </div>
           </section>
         </div>
-      </main>
+    </main>
 
       <footer class="page-footer">
-        <div class="page-footer__content-wrapper content-wrapper">
+        <div class="page-footer__content-wrapper">
           <a class="page-footer__logo footer-logo" aria-label="Логотип Мишка">
             <svg class="footer-logo__image" width="102" height="34">
                   <use xlink:href="img/sprite.svg#footer-logo"></use>

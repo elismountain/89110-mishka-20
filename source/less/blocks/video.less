@@ -1,6 +1,5 @@
 .video {
   position: relative;
-  box-sizing: border-box;
   padding-top: 30px;
   border: 1px solid @grey-light;
 
@@ -19,6 +18,20 @@
     gap: 1px 1px;
     grid-template-areas: "video__content-wrapper video__content-wrapper video__description-wrapper" "video__content-wrapper video__content-wrapper video__description-wrapper" "video__content-wrapper video__content-wrapper video__description-wrapper";
   }
+}
+
+.video-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
 }
 
 .video__title {
@@ -165,15 +178,19 @@
 
 .video__button {
   margin-top: 25px;
+  max-width: 192px;
+  height: 52px;
 
   @media (min-width: @tablet-width) {
     margin-top: 35px;
-    max-width: 600px;
+    max-width: 584px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 45px;
     max-height: 52px;
     grid-area: video__button;
+    max-width: 230px;
+    height: 52px;
   }
 }
