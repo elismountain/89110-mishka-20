@@ -3,6 +3,7 @@
   padding-top: 17px;
   padding-bottom: 38px;
 
+
   @media (min-width: @tablet-width) {
     padding-top: 21px;
     padding-bottom: 57px;
@@ -20,7 +21,15 @@
 .contacts-wrapper {
   padding-top: 4px;
   padding-bottom: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 0;
@@ -80,15 +89,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 49px;
-    margin-bottom: 49px;
     max-width: 668px;
     font-size: 17px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 48px;
-    margin-bottom: 42px;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
 
@@ -103,32 +107,30 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     width: 55px;
-    padding-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 30px;
-    padding-left: 0;
   }
 }
 
 .contacts__list-description {
   display: inline-block;
   vertical-align: top;
-  margin-left: 25px;
+  margin-left: 20px;
   margin-bottom: 30px;
-  width: 182px;
   color: @grey-basic;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin-left: 21px;
     margin-bottom: 0;
-    width: 257px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 30px;
-    padding-right: 150px;
+    padding: 0;
+    margin-left: 0;
   }
 }
 
@@ -151,11 +153,22 @@
 }
 
 .contacts__button-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 269px;
+    padding-right: 269px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-left: 175px;
     padding: 0;
     width: 230px;
     min-width: auto;
+    padding-top: 60px;
   }
 }
 
