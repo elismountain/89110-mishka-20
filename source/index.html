@@ -12,13 +12,13 @@
 
   <header class="page-header page-header--index">
     <nav class="main-navigation main-navigation--closed main-nav--nojs">
-      <!--  <a class="header-logo" area-label="Мишка">
+      <a class="header-logo" area-label="Мишка">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
         </picture>
-      </a> -->
+      </a>
 
         <button class="main-navigation__toggle main-navigation__toggle--off" type="button">
           <span class="visually-hidden"> Открыть меню</span>
@@ -33,9 +33,7 @@
           <a class="site-navigation__link" href="form.html"> Вязание на заказ</a>
         </li>
       </ul>
-
       <!--
-
       <ul class="main-navigation__user-list user-navigation">
         <li class="user-navigation__item">
           <a class="user-navigation__search user-navigation__search--search" href="#">
@@ -72,27 +70,25 @@
   <main class="page-main">
     <h1 class="visually-hidden"> Интернет магазин Мишка </h1>
 
-    <section class="catalog content-wrapper">
+    <section class="catalog">
       <div class="catalog__content-wrapper">
-      <h2 class="catalog__title"> Милые штуки
-        <br> ручной
-        <br> работы для дома
-      </h2>
-      <ul class="catalog-list catalog__list">
-        <li class="catalog-list__item">
-          <a class="catalog-list__link catalog-list__link--interior" href="#">
-            <span class="catalog-list__text">Предметы интерьера</span>
-          </a>
-        </li>
-        <li class="catalog-list__item">
-          <a class="catalog-list__link catalog-list__link--toys" href="#">
-            <span class="catalog-list__text">Детские  игрушки</span>
-          </a>
-        </li>
-      </ul>
+        <h2 class="catalog__title"> Милые штуки ручной работы для дома </h2>
+        <ul class="catalog-list catalog__list">
+          <li class="catalog-list__item">
+            <a class="catalog-list__link catalog-list__link--interior" href="#">
+              <span class="catalog-list__text">Предметы интерьера</span>
+            </a>
+          </li>
+          <li class="catalog-list__item">
+            <a class="catalog-list__link catalog-list__link--toys" href="#">
+              <span class="catalog-list__text">Детские  игрушки</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="promo content-wrapper">
+    <section class="promo">
       <h2 class="promo__title"> Вязанные корзинки </h2>
       <p class="promo__text"> Товар недели </p>
       <div class="promo__content-wrapper">
@@ -128,12 +124,13 @@
       </picture>
       </div>
 
-      <div class="promo__price"> Цена: 990 руб. </div>
-
-      <button class="promo-button button"> Заказать </button>
+      <div class="promo__price-wrapper">
+        <div class="promo__price"> Цена: 990 руб. </div>
+        <button class="promo-button button"> Заказать </button>
+      </div>
     </section>
 
-    <section class="advantages content-wrapper">
+    <section class="advantages">
       <h2 class="advantages__title"> Коротко о нас: </h2>
 
       <ul class="advantages__list advantages-list">
@@ -164,7 +161,7 @@
       </ul>
     </section>
 
-    <section class="review content-wrapper">
+    <section class="review">
       <h2 class="review__title"> Отзывы </h2>
       <p class="review__text">
         Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В
@@ -185,23 +182,10 @@
       <button class="review__button button"> Написать </button>
     </section>
 
-    <section class="contacts content-wrapper">
+    <section class="contacts">
       <div class="contacts-wrapper">
         <h2 class="contacts__title"> Контакты </h2>
-      <!--  <div class="email">
-          <div class="contacts__list-term ">e-mail:</div>
-          <div class="contacts__list-description">
-            <a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-        </div>
-          <div class="adress">
-            <div class="contacts__list-term">адрес:</div>
-            <div class="contacts__list-description">
-              г. Санкт-Петербург,
-              ул. Большая Конюшенная,
-              д. 19/8, офис 101
-            </div>
-          </div> -->
+
         <dl class="contacts__list">
           <dt class="contacts__list-term">e-mail:</dt>
           <dd class="contacts__list-description"><a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
@@ -231,7 +215,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__content-wrapper content-wrapper">
+    <div class="page-footer__content-wrapper">
       <a class="page-footer__logo footer-logo" aria-label="Логотип Мишка">
         <svg class="footer-logo__image" width="102" height="34">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
