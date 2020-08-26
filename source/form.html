@@ -170,23 +170,23 @@
 
         <div class="special-order__block-wrapper special-order__block-wrapper--gray">
           <fieldset class="special-order__fieldset special-order__fieldset--contact">
-            <div class="special-order__content-wrapper--phone">
-              <label class="special-order__legend" for="phone">
+            <div class="special-order__content-wrapper">
+              <label class="special-order__legend special-order__legend--phone" for="phone">
                 <span class="special-order__legent-text"> Тел </span>
               </label>
               <p class="special-order__input-wrapper special-order__input-wrapper--contact">
                 <input class="special-order__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                <svg class="special-order__phone" width="25" height="24">
+                <svg class="special-order__input-image special-order__input-image--phone" width="25" height="24">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </p>
 
-              <label class="special-order__legend" for="email">
+              <label class="special-order__legend special-order__legend--email" for="email">
                 <span class="special-order__legent-text"> E-mail </span>
               </label>
               <p class="special-order__input-wrapper special-order__input-wrapper--contact">
                 <input class="special-order__input-text" type="email" id="email" name="email" placeholder="Ваш Email*">
-                <svg class="special-order__email" width="32px" height="32px">
+                <svg class="special-order__input-image special-order__input-image--email" width="32px" height="32px">
                   <use xlink:href="img/sprite.svg#email-form"></use>
                 </svg>
               </p>
@@ -200,7 +200,7 @@
             <span class="special-order__legent-text">Доп</span>
           </legend>
 
-          <div class="special-order__content-wrapper-email">
+          <div class="special-order__content-wrapper">
             <textarea class="special-order__input-text special-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>

@@ -97,7 +97,7 @@
     padding-right: 50px;
   }
 
-  .special-order__fieldset--type {
+  &--type {
     margin-bottom: 11px;
 
     @media (min-width: @tablet-width) {
@@ -105,7 +105,7 @@
     }
   }
 
-  .special-order__fieldset--color {
+  &--color {
     margin-bottom: 0;
     padding-bottom: 13px;
 
@@ -115,16 +115,16 @@
     }
   }
 
-  .special-order__fieldset--name {
+  &--name {
     padding-top: 28px;
     padding-bottom: 10px;
   }
 
-  .special-order__fieldset--contact {
+  &--contact {
     padding-bottom: 32px;
   }
 
-  .special-order__fieldset--message {
+  &--message {
     padding-bottom: 16px;
   }
 }
@@ -148,6 +148,21 @@
 
   @media (min-width: @desktop-width) {
     left: 112px;
+  }
+
+  &--phone,
+  &--email {
+    margin-bottom: 6px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--email {
+    @media (min-width: @tablet-width) {
+      top: 143px;
+    }
   }
 }
 
@@ -231,6 +246,22 @@
 .special-order__input-text {
   font-size: 17px;
   line-height: 18px;
+  box-sizing: border-box;
+  padding: 12px 0;
+  width: 100%;
+  min-height: 52px;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: @black;
+  font-family: inherit;
+  background-color: transparent;
+  outline: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 12px 16px;
+    font-size: 19px;
+    line-height: 19px;
+  }
 }
 
 .special-order__submit {
@@ -282,24 +313,54 @@
   }
 }
 
-.special-order__phone {
-  fill: @black;
-  opacity: 0.2;
+.form-feedback__input-image {
+  position: absolute;
+  top: 11px;
+  fill-opacity: 0.2;
 
-  &:hover,
-  &:active {
-    fill: @green-form;
-    opacity: 1;
+  @media (min-width: @tablet-width) {
+    top: 12px;
   }
 }
 
-.special-order__email {
-  fill: @black;
-  opacity: 0.2;
+.form-feedback__input-image--phone {
+  right: 8px;
+  width: 25px;
+  height: 24px;
 
-  &:hover,
-  &:active {
-    fill: @green-form;
-    opacity: 1;
+  @media (min-width: @tablet-width) {
+    right: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 8px;
+  }
+}
+
+.form-feedback__input-image--email {
+  right: 4px;
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: @tablet-width) {
+    right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 4px;
+  }
+}
+
+.special-order__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: @black;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    line-height: 19px;
+    padding-right: 27px;
   }
 }
