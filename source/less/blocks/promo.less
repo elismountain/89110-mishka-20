@@ -208,10 +208,14 @@
 }
 
 .promo-button {
-  width: 259px;
+  min-width: 259px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 292px;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    width: 292px;
   }
 }
