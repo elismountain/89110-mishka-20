@@ -14,7 +14,7 @@
     padding-right: 50px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-auto-rows: 1fr 3fr 2fr;
+    grid-auto-rows: 0.7fr 2fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "promo__title promo__title promo__text" "promo__content-wrapper promo__image-wrapper promo__image-wrapper" "promo__price-wrapper promo__image-wrapper promo__image-wrapper";
   }
@@ -129,6 +129,7 @@
   @media (min-width: @tablet-width) {
     grid-area: promo__price-wrapper;
     padding-right: 50px;
+    align-self: end;
   }
 }
 
@@ -138,12 +139,14 @@
   font-size: 15px;
   line-height: 24px;
   color: @grey-basic;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
     margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
+    padding-right: 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -159,36 +162,29 @@
 
 .promo__image-wrapper {
   margin: 0 auto;
-  width: 260px;
-  height: 315px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
     top: 24px;
     right: 0;
     margin: 0;
-    width: 333px;
-    height: 404px;
     grid-area: promo__image-wrapper;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 525px;
-    height: 636px;
   }
 }
 
 .promo__image {
   display: block;
-  width: 260px;
+  width: 100%;
   height: auto;
 
   @media (min-width: @tablet-width) {
-    width: 333px;
+    min-width: 333px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 525px;
+    min-width: 525px;
   }
 }
 
