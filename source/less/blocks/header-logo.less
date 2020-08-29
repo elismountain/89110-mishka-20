@@ -1,6 +1,15 @@
 .header-logo {
+  display: block;
   width: 86px;
   height: 35px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     width: 113px;
@@ -10,14 +19,6 @@
   @media (min-width: @desktop-width) {
     width: 149px;
     height: 72px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -32,7 +33,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 149px;
-    height: 72px;
+    width: 150px;
+    height: 75px;
   }
 }

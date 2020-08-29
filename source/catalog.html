@@ -9,23 +9,22 @@
 </head>
 
 <body class="page-body">
-
-
-  <header class="page-header page-header--index">
+  <header class="page-header">
     <nav class="main-navigation main-navigation--closed main-nav--nojs">
-        <a class="header-logo" href="index.html"  area-label="Мишка">
+      <div class ="main-navigation__logo--wrapper">
+        <a class="header-logo main-navigation__logo" href="index.html" area-label="Мишка">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
         </picture>
-        </a>
+      </a>
 
-        <button class="main-navigation__toggle main-navigation__toggle--off" type="button">
-          <span class="visually-hidden"> Открыть меню</span>
+        <button class="main-navigation__toggle main-navigation__toggle--off" id="toggle-button" type="button" aria-label="Меню">
+          <span class="visually-hidden"> Открыть меню </span>
         </button>
+      </div>
 
-      <div class="main-navigation__wrapper">
       <ul class="main-navigation__site-list site-navigation">
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="catalog.html"> Каталог товаров</a>
@@ -34,7 +33,6 @@
           <a class="site-navigation__link" href="form.html"> Вязание на заказ</a>
         </li>
       </ul>
-      <!--
 
       <ul class="main-navigation__user-list user-navigation">
         <li class="user-navigation__item">
@@ -54,20 +52,18 @@
             <span class="user-navigation__basket-text"> Корзина: пока пуста </span>
           </a>
       </ul>
-    </div>
 
-
-      <ul class="stock">
-        <li class="stock__item">
-          <a class="stock__item-link" href="">Новые поступления </a>
+      <ul class=" main-vagation__stock-list stock-navigation">
+        <li class="stock-navigation__item">
+          <a class="stock-navigation__item-link" href="">Новые поступления </a>
         </li>
-        <li class="stock__item">
-          <a class="stock__item-link" href="">Распродажа </a>
+        <li class="stock-navigation__item">
+          <a class="stock-navigation__item-link" href="">Распродажа </a>
         </li>
       </ul>
 
       <p class="main-navigation__text"> Бесплатная доставка по России </p>
-    </nav> -->
+    </nav>
   </header>
 
       <main class="page-main page-main__catalog">
