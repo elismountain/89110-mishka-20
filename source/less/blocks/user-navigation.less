@@ -12,8 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 398px;
-    border-bottom: 1px solid @grey-light;
     background-color: @white;
   }
 
@@ -80,6 +78,7 @@
 
 .user-navigation__search-image {
   position: absolute;
+  top: 40%;
   left: 30px;
   fill: @black;
   opacity: 0.2;
@@ -103,4 +102,10 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid @grey-light;
+}
+
+.user-navigation__search-text {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
