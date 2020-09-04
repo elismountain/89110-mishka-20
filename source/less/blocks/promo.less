@@ -20,12 +20,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 119px;
     padding-bottom: 61px;
+    display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-rows: 1fr 2fr 1fr;
     gap: 1px 1px;
-    grid-template-areas: "promo__text promo__title  promo__image-wrapper " "promo__text promo__content-wrapper  promo__image-wrapper " "promo__text promo__price-wrapper  promo__image-wrapper ";
   }
 
   &::after {
@@ -51,7 +50,7 @@
       right: 50px;
       height: 23px;
       background-size: 1050px 21px;
-      background-position-x: -25px;
+      background-position-x: -55px;
     }
   }
 }
@@ -90,9 +89,14 @@
 
   @media (min-width: @desktop-width) {
     max-width: none;
-    order: 1;
     font-size: 53px;
     line-height: 57px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    order: 1;
+    padding-top: 68px;
   }
 }
 
@@ -116,13 +120,26 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
     margin: 0 auto;
+    padding-top: 85px;
   }
 }
 
 .promo__content-wrapper {
   @media (min-width: @tablet-width) {
     grid-area: promo__content-wrapper;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -8px;
   }
 }
 
@@ -131,6 +148,13 @@
     grid-area: promo__price-wrapper;
     padding-right: 50px;
     align-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
 
@@ -173,6 +197,13 @@
     padding-top: 10px;
     grid-area: promo__image-wrapper;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }
 
 .promo__image {
@@ -202,6 +233,10 @@
     margin-bottom: 34px;
     font-size: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .promo__button {
@@ -214,5 +249,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    margin-bottom: -5px;
   }
 }

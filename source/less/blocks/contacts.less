@@ -56,6 +56,7 @@
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 0;
   }
 
   &::after {
@@ -110,6 +111,7 @@
     grid-template-areas:
       "contacts__list-email contacts__list-description"
       "contacts__list-adress contacts__list-content";
+    margin-bottom: 0;
   }
 }
 
@@ -120,6 +122,11 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    margin-top: 9px;
   }
 }
 
@@ -133,6 +140,11 @@
     padding: 0;
     margin-left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    margin-top: 9px;
+  }
 }
 
 .contacts__list-adress {
@@ -143,6 +155,11 @@
     margin-bottom: 30px;
     padding-right: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__list-content {
@@ -152,9 +169,7 @@
 
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 30px;
     padding: 0;
-    margin-left: 0;
   }
 }
 
@@ -167,7 +182,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 69px;
+    top: 40px;
     right: 50px;
     margin-bottom: 0;
     width: 525px;
@@ -191,7 +206,7 @@
     padding: 0;
     width: 230px;
     min-width: auto;
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }
 
