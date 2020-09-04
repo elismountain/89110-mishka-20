@@ -12,13 +12,19 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
+
+  @media (min-width: @desktop-width) {
+    top: -16px;
+  }
 }
 
 .catalog-list__item {
   min-width: 320px;
+  height: 103px;
 
   @media (min-width: @tablet-width) {
     width: 50%;
+    height: 119px;
   }
 }
 
@@ -113,4 +119,13 @@
 .catalog-list__text {
   display: block;
   max-width: 120px;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

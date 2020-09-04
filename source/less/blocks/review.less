@@ -1,6 +1,5 @@
 .review {
   position: relative;
-  padding-top: 17px;
   padding-bottom: 51px;
   padding-left: 30px;
   padding-right: 30px;
@@ -8,7 +7,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
+    padding-top: 82px;
     padding-bottom: 127px;
     padding-left: 50px;
     padding-right: 50px;
@@ -44,7 +43,7 @@
   @media (min-width: @tablet-width) {
     height: 17px;
     background-size: 768px 17px;
-    bottom: 100px;
+    bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,7 +58,11 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  font-style: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: bold;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     max-width: 300px;
@@ -67,33 +70,46 @@
     font-size: 43px;
     line-height: 50px;
     margin: 0;
+    margin-top: 4px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 21px;
   }
 }
 
+.reviews__content {
+  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  line-height: 30px;
+}
+
 .review__text {
-  margin-top: 16px;
-  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 36px;
   font-size: 15px;
   line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  min-width: 260px;
   color: @grey-basic;
   font-family: "Open Sans", "Arial", sans-serif;
 
 
   @media (min-width: @tablet-width) {
-    margin-top: -25px;
-    margin-bottom: 58px;
+    margin-top: -30px;
     font-size: 17px;
     grid-area: review__text;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 38px;
-    margin-top: 10px;
+    margin-bottom: 27px;
+    margin-top: -3px;
   }
 }
 
@@ -105,6 +121,7 @@
 
   @media (min-width: @tablet-width) {
     grid-area: review__author;
+    margin-top: 22px;
   }
 }
 
@@ -137,6 +154,7 @@
     margin: 0;
     width: 175px;
     grid-area: review__nav;
+    margin-top: 25px;
   }
 }
 
@@ -196,8 +214,8 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      width: 0;
-      height: 0;
+      width: 50px;
+      height: 26px;
       transform: translate(-50%, -50%);
       background-repeat: no-repeat;
       background-size: 50px 26px;
@@ -236,5 +254,9 @@
     min-width: 175px;
     grid-area: review__button;
     margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 21px;
   }
 }
