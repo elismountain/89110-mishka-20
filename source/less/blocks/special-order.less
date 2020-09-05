@@ -1,20 +1,16 @@
 .special-order {
-  padding-top: 22px;
+  padding-top: 17px;
   padding-bottom: 55px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin: 0 auto;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-top: 72px;
-    padding-bottom: 45px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 65px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 122px;
+    padding-top: 115px;
   }
 }
 
@@ -23,10 +19,13 @@
   font-size: 13px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -46,6 +45,12 @@
   @media (min-width: @desktop-width) {
     padding-left: 175px;
     padding-right: 175px;
+    padding-top: 3px;
+  }
+
+  &--type {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &--color {
@@ -60,7 +65,7 @@
       min-height: 204px;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       padding-right: 145px;
       min-height: 128px;
     }
@@ -96,7 +101,7 @@
     margin-bottom: 11px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 0;
+      margin-bottom: -20px;
     }
   }
 
@@ -107,20 +112,40 @@
     @media (min-width: @tablet-width) {
       display: flex;
       flex-wrap: wrap;
+      padding-bottom: 50px;
     }
   }
 
   &--name {
-    padding-top: 28px;
+    padding-top: 30px;
     padding-bottom: 10px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 25px;
+      padding-top: 49px;
+    }
   }
 
   &--contact {
-    padding-bottom: 32px;
+    padding-bottom: 2px;
+    top: -19px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 12px;
+    }
   }
 
   &--message {
-    padding-bottom: 16px;
+    top: -20px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 0;
+      top: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -5px;
+    }
   }
 }
 
@@ -150,7 +175,7 @@
     margin-bottom: 6px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 0;
+      margin-top: 18px;
     }
   }
 
@@ -180,20 +205,29 @@
 
 .special-order__textarea {
   display: block;
-  margin: auto;
+  min-height: 110px;
+  min-width: 230px;
   padding: 15px 14px;
-  min-height: 142px;
   border: 2px solid @grey-basic;
   box-shadow: inset 0 -2px 0 @black;
   resize: vertical;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    min-width: 501px;
+    min-height: 110px;
+    min-width: 470px;
+    font-size: 19px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 700px;
+    min-width: 670px;
+    min-height: 115px;
+    padding: 10px 14px;
   }
 }
 
@@ -204,18 +238,23 @@
   margin-bottom: 0;
 
   &--type {
-    max-width: 260px;
+    min-width: 260px;
   }
 
   &--color {
     margin-bottom: 19px;
     min-width: 240px;
+    font-size: 17px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       min-width: 203px;
     }
   }
@@ -234,7 +273,12 @@
     margin-bottom: 32px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 24px;
+      margin-top: 20px;
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 17px;
     }
   }
 }
@@ -249,9 +293,9 @@
   border-width: 0 0 2px 0;
   border-style: solid;
   border-color: @black;
-  font-style: "Open Sans", "Arial", sans-serif;
-  color: @black, 30%;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: @black;
+  opacity: 0.3;
   background-color: transparent;
   outline: none;
 
@@ -273,9 +317,9 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding-top: 51px;
-    padding-bottom: 51px;
+    padding-bottom: 44px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -283,19 +327,22 @@
   @media (min-width: @desktop-width) {
     padding: 0 225px 2px;
     margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 45px;
   }
 }
 
 .special-order__essential {
-  font-style: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: @grey-basic;
+  margin-top: -25px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
+    margin-top: -25px;
     order: 1;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -307,8 +354,7 @@
 }
 
 .special-order__button {
-  margin-top: 31px;
-  margin-bottom: 30px;
+  margin-top: 15px;
   min-width: 260px;
 
 
@@ -379,9 +425,13 @@
   padding-left: 62px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 16px;
-    padding-bottom: 17px;
+    padding-top: 17px;
+    padding-bottom: 39px;
     padding-left: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 300px;
   }
 
   &::before {
@@ -448,14 +498,20 @@
     padding-left: 80px;
   }
 
+  @media (min-width: @tablet-width) {
+    padding-top: 21px;
+    padding-bottom: 14px;
+    padding-left: 82px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     left: 0;
     top: 2px;
-    width: 36px;
-    height: 36px;
-    border-width: 2px;
+    width: 34px;
+    height: 34px;
+    border-width: 3px;
     border-style: solid;
     border-color: @grey-basic;
 
@@ -478,7 +534,7 @@
     border-left: 2px solid @grey-basic;
     border-bottom: 2px solid @grey-basic;
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       left: 12px;
       width: 29px;
       height: 14px;
