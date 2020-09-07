@@ -32,6 +32,14 @@
       content: "";
     }
   }
+
+  &--closed {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
 }
 
 .site-navigation__link {
@@ -44,10 +52,7 @@
   text-decoration: none;
   font-weight: bold;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
   font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
 
   &:hover {
     opacity: 0.6;

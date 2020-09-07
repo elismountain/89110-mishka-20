@@ -1,7 +1,6 @@
 .main-navigation {
   box-sizing: border-box;
   max-width: 1150px;
-  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +71,7 @@
     display: none;
   }
 
-  .main-navigation__toggle--off {
+  &--off {
     &::before {
       content: "";
       position: absolute;
@@ -90,7 +89,7 @@
   }
 }
 
-.main-nav--nojs .main-navigation__toggle {
+.main-navigation--nojs .main-navigation__toggle {
   display: none;
 }
 

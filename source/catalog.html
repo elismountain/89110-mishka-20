@@ -44,6 +44,8 @@
           </a>
         </li>
 
+
+
         <li class="user-navigation__item">
           <a class="user-navigation__search user-navigation__search--busket" href="#">
             <svg class="user-navigation__search-image" width="21" height="18">
@@ -73,7 +75,7 @@
     </header>
 
     <div class="catalog-result">
-      <section class="catalog-product ">
+      <section class="catalog-product">
         <a class="catalog-product__image" href="#">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
@@ -92,7 +94,7 @@
           <p class="catalog-product__description">Рост 30 см, вес 200 г</p>
           <div class="catalog-product__price-wrapper">
             <p class="catalog-product__price">1 200 руб.</p>
-            <a class="catalog-product__button" href="#" aria-label="Добавить в корзину">
+            <a class="catalog-product__button" href="rabbit.html" aria-label="Добавить в корзину">
               <svg class="card-product__button-image" width="21" height="18">
                 <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
@@ -120,7 +122,7 @@
           <p class="catalog-product__description">Диаметр 15 см, высота 10 см</p>
           <div class="catalog-product__price-wrapper">
             <p class="catalog-product__price">690 руб.</p>
-            <a class="catalog-product__button" href="#" aria-label="Добавить в корзину">
+            <a class="catalog-product__button" href="basket.html" aria-label="Добавить в корзину">
               <svg class="card-product__button-image" width="21" height="18">
                 <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
@@ -148,7 +150,7 @@
           <p class="catalog-product__description">Диаметр 30 см, высота 30 см </p>
           <div class="catalog-product__price-wrapper">
             <p class="catalog-product__price">1 500 руб.</p>
-            <a class="catalog-product__button" href="#" aria-label="Добавить в корзину">
+            <a class="catalog-product__button" href="toys.html" aria-label="Добавить в корзину">
               <svg class="card-product__button-image" width="21" height="18">
                 <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
@@ -157,7 +159,6 @@
         </div>
       </section>
     </div>
-
 
     <div class="video-wrapper">
       <section class="video page-main__video ">
@@ -225,7 +226,7 @@
     </div>
   </footer>
 
-  <div class="modal page__overlay">
+  <div class="modal page__overlay modal--opened">
     <form class="form-cart modal__form-cart" action="https://echo.htmlacademy.ru" method="POST">
       <h2 class="form-cart__title">Добавить в корзину</h2>
 
@@ -245,6 +246,9 @@
       <button class="form-cart__button button button--green" type="submit">Добавить</button>
     </form>
   </div>
+
+  <script src="js/index.js"></script>
+
 </body>
 
 </html>

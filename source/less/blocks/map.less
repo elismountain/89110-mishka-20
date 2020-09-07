@@ -23,3 +23,20 @@
     min-width: 525px;
   }
 }
+
+.map__marker {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  width: 66px;
+  height: 101px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-size: 66px 101px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    left: 72%;
+    top: 30%;
+  }
+}
