@@ -26,7 +26,7 @@
 
 .map__marker {
   position: absolute;
-  z-index: 10;
+  z-index: 50;
   left: 50%;
   top: 50%;
   width: 66px;
@@ -38,5 +38,28 @@
   @media (min-width: @desktop-width) {
     left: 72%;
     top: 30%;
+  }
+}
+
+.map-interactive {
+  position: relative;
+  z-index: 20;
+  border: none;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  min-width: 320px;
+  min-height: 457px;
+
+  @media (min-width: @mobile-width-550) {
+    min-width: 525px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 525px;
   }
 }
