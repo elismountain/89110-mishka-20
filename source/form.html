@@ -10,8 +10,8 @@
 
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-navigation main-navigation--closed main-nav--nojs">
-      <div class="main-navigation__logo--wrapper">
+    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+      <div class="main-navigation__logo">
         <a class="header-logo" href="index.html" aria-label="Мишка">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -36,7 +36,7 @@
 
       <ul class="main-navigation__user-list user-navigation">
         <li class="user-navigation__item">
-          <a class="user-navigation__search user-navigation__search--search" href="#">
+          <a class="user-navigation__search user-navigation__search--search" href="search.html">
             <svg class="user-navigation__search-image" width="18" height="18">
               <use xlink:href="img/sprite.svg#search"></use>
             </svg>
@@ -45,7 +45,7 @@
         </li>
 
         <li class="user-navigation__item">
-          <a class="user-navigation__search user-navigation__search--busket" href="#">
+          <a class="user-navigation__search user-navigation__search--busket" href="busket.html">
             <svg class="user-navigation__search-image" width="21" height="18">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
@@ -55,10 +55,10 @@
 
       <ul class="main-navigation__stock-list stock-navigation">
         <li class="stock-navigation__item">
-          <a class="stock-navigation__item-link" href="">Новые поступления </a>
+          <a class="stock-navigation__item-link" href="newstock.html">Новые поступления </a>
         </li>
         <li class="stock-navigation__item">
-          <a class="stock-navigation__item-link" href="">Распродажа </a>
+          <a class="stock-navigation__item-link" href="sales.html">Распродажа </a>
         </li>
       </ul>
 
@@ -147,12 +147,12 @@
           <div class="special-order__content-wrapper special-order__content-wrapper--name">
             <p class="special-order__input-wrapper special-order__input-wrapper--name">
               <label class="special-order__label" for="name">Имя:</label>
-              <input class="special-order__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+              <input class="special-order__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--name">
               <label class="special-order__label" for="surname">Фамилия:</label>
-              <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*"> </p>
+              <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required> </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--name">
               <label class="special-order__label" for="middlename">Отчество:</label>
@@ -169,7 +169,7 @@
               <span class="special-order__legent-text"> Тел </span>
             </label>
             <p class="special-order__input-wrapper special-order__input-wrapper--contact">
-              <input class="special-order__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <input class="special-order__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <svg class="special-order__input-image special-order__input-image--phone" width="25" height="24">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -179,7 +179,7 @@
               <span class="special-order__legent-text"> E-mail </span>
             </label>
             <p class="special-order__input-wrapper special-order__input-wrapper--contact">
-              <input class="special-order__input-text" type="email" id="email" name="email" placeholder="Ваш Email*">
+              <input class="special-order__input-text" type="email" id="email" name="email" placeholder="Ваш Email*" required>
               <svg class="special-order__input-image special-order__input-image--email" width="32px" height="32px">
                 <use xlink:href="img/sprite.svg#email-form"></use>
               </svg>
@@ -208,7 +208,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__content-wrapper">
+    <div class="page-footer__wrapper">
       <a class="page-footer__logo footer-logo" aria-label="Логотип Мишка">
         <svg class="footer-logo__image" width="102" height="34">
           <use xlink:href="img/sprite.svg#footer-logo"></use>
@@ -217,21 +217,21 @@
 
       <ul class="social-links">
         <li class="social-links__item">
-          <a class="social-links__link" href="#" aria-label="Instagram">
+          <a class="social-links__link" href="https://www.instagram.com/" aria-label="Instagram">
             <svg class="social-links__image" width="22" height="21">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link" href="#" aria-label="Facebook">
+          <a class="social-links__link" href="https://www.facebook.com/" aria-label="Facebook">
             <svg class="social-links__image" width="15" height="28">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link" href="#" aria-label="Twitter">
+          <a class="social-links__link" href="https://twitter.com/" aria-label="Twitter">
             <svg class="social-links__image" width="23" height="20">
               <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
@@ -240,7 +240,7 @@
       </ul>
 
       <p class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="#" aria-label="HTML Academy">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <span class="page-footer__copyright-text">Разработано</span>
           <svg class="page-footer__copyright-image" width="27" height="34">
             <use xlink:href="img/sprite.svg#copyright"></use>

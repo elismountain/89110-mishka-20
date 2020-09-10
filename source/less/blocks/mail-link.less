@@ -1,0 +1,16 @@
+.mail-link {
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid @green-form;
+  color: @grey-basic;
+
+  &:hover {
+    border-bottom-color: @footer-green;
+    color: @footer-green;
+  }
+
+  &:active {
+    color: @footer-green;
+    border-bottom-color: fade(@footer-green, 10%);
+  }
+}

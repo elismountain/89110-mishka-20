@@ -18,7 +18,7 @@
   }
 }
 
-.contacts-wrapper {
+.contacts__wrapper {
   padding-top: 9px;
   padding-bottom: 5px;
   padding-left: 30px;
@@ -30,6 +30,7 @@
     padding-left: 50px;
     padding-right: 50px;
     margin: 0;
+    margin-top: 4px;
   }
 
   @media (min-width: @desktop-width) {
@@ -82,7 +83,6 @@
     }
   }
 }
-
 
 .contacts__list {
   display: grid;
@@ -174,10 +174,10 @@
 }
 
 .contacts__map {
-  margin-bottom: 39px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -210,28 +210,33 @@
   }
 }
 
+.contacts__marker {
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  top: 50%;
+  width: 66px;
+  height: 101px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-size: 66px 101px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    left: 47%;
+    top: 46%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 72%;
+    top: 30%;
+  }
+}
+
 .contacts__button {
   width: 260px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 230px;
-  }
-}
-
-.mail-link {
-  text-decoration: none;
-  padding-bottom: 4px;
-  border-bottom: 1px solid @green-form;
-  color: @grey-basic;
-
-  &:hover {
-    border-bottom-color: @footer-green;
-    color: @footer-green;
-  }
-
-  &:active {
-    color: @footer-green;
-    border-bottom-color: fade(@footer-green, 10%);
   }
 }
