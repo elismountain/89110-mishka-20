@@ -26,7 +26,7 @@ const toggleButton = document.getElementById('toggle-button');
   // modal window
 
 const overlayModal = document.querySelector('.modal');
-const catalogBlock = document.querySelector('.catalog-product');
+const catalogBlock = document.querySelector('.catalog-result');
 const orderButton = document.querySelector('.promo__button');
 
 if (overlayModal) {
@@ -46,7 +46,7 @@ function openOrderForm(event) {
   let element = event.target;
 
   if (
-    element.classList.contains('catalog-product__button') ||
+    element.classList.contains('catalog-product__price-wrapper') ||
     element.classList.contains('promo__button')
   ) {
     event.preventDefault();
