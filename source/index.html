@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Мишка — интернет-магазин игрушек</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header page-header--index">
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <div class="main-navigation__logo">
-        <a class="header-logo" aria-label="Мишка">
+        <a class="header-logo" aria-label="Логотип Мишка">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -224,21 +226,21 @@
 
       <ul class="social-links">
         <li class="social-links__item">
-          <a class="social-links__link" href="#" aria-label="Instagram">
-            <svg class="social-links__image" width="22" height="21">
+          <a class="social-links__link links-link" href="#" aria-label="Instagram">
+            <svg  class="social-links__image" width="22" height="21">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="#" aria-label="Facebook">
-            <svg class="social-links__image" width="15" height="28">
+            <svg  class="social-links__image" width="15" height="28">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link" href="#" aria-label="Twitter">
+          <a class="social-links__link links-link" href="#" aria-label="Twitter">
             <svg class="social-links__image" width="23" height="20">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>

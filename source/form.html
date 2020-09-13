@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Мишка — интернет-магазин игрушек</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <div class="main-navigation__logo">
-        <a class="header-logo" href="index.html" aria-label="Мишка">
+        <a class="header-logo" href="index.html" aria-label="Логотип Мишка">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -84,15 +83,15 @@
           </legend>
 
           <div class="special-order__content-wrapper special-order__content-wrapper--type">
-            <p class="special-order__input-wrapper special-order__input-wrapper--type">
-              <input class="special-order__radio visually-hidden" type="radio" id="interior" name="type" value="1" checked>
-              <label class="special-order__label-radio" for="interior">Аксессуар для интерьера</label>
-            </p>
+            <div class="special-order__input-wrapper special-order__input-wrapper--type">
+              <input type="radio" name="toggle" id="interior" value="accessory" checked class="special-order__radio visually-hidden">
+              <label for="interior" class="special-order__label-radio special-order__label-radio--dot">Аксессуар для интерьера</label>
+            </div>
 
-            <p class="special-order__input-wrapper special-order__input-wrapper--type">
-              <input class="special-order__radio visually-hidden" type="radio" id="toys" value="2" name="type">
-              <label class="special-order__label-radio" for="toys">Детская игрушка</label>
-            </p>
+            <div class="special-order__input-wrapper special-order__input-wrapper--type">
+              <input type="radio" name="toggle" id="toy" class="special-order__radio visually-hidden">
+              <label for="toy" class="special-order__label-radio">Детская игрушка</label>
+            </div>
           </div>
         </fieldset>
       </div>
