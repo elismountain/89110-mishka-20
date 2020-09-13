@@ -714,7 +714,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .catalog-list__link:hover {
   transform: translateY(-5px);
@@ -776,7 +776,7 @@ img {
 }
 .promo {
   position: relative;
-  padding-top: 24px;
+  padding-top: 26px;
   padding-bottom: 6px;
   padding-left: 30px;
   padding-right: 30px;
