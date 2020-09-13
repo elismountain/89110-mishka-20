@@ -434,6 +434,11 @@
   }
 }
 
+.special-order__radio {
+  position: absolute;
+  apperience: none;
+}
+
 .special-order__label-radio {
   position: relative;
   display: block;
@@ -495,11 +500,13 @@
     border-color: @grey-basic;
     opacity: 0.3;
   }
-
-  .special-order__radio:checked + .special-order__label-radio--dot {
-    display: block;
-  }
 }
+
+.special-order__label:checked + .special-order__label-radio::after {
+  display: none;
+  background-color: @white;
+}
+
 
 .special-order__label-checkbox {
   position: relative;

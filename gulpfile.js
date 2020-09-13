@@ -11,6 +11,7 @@ const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
+const htmlmin = require('gulp-htmlmin');
 
 // Styles
 
@@ -51,9 +52,10 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/*.html", gulp.series(html));
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/css/*.css").on("change", sync.reload);
 }
-
 
 //Images
 
@@ -115,6 +117,18 @@ const clean = () => {
 
 exports.clean = clean;
 
+//html
+
+const html = () => {
+    return gulp
+      .src("source/*.html")
+      .pipe(htmlmin({ collapseWhitespace: true }))
+      .pipe(gulp.dest("build"))
+      .pipe(sync.stream());
+};
+
+exports.html = html;
+
 
 //build
 
@@ -123,7 +137,8 @@ const build = (done) => {
   "clean",
   "copy",
   "styles",
-  "sprite"
+  "sprite",
+  "html"
 )(done)
 };
 
