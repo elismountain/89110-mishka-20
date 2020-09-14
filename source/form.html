@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Мишка — интернет-магазин игрушек</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -85,12 +87,12 @@
           <div class="special-order__content-wrapper special-order__content-wrapper--type">
             <div class="special-order__input-wrapper special-order__input-wrapper--type">
               <input type="radio" name="toggle" id="interior" value="accessory" checked class="special-order__radio visually-hidden">
-              <label for="interior" class="special-order__label-radio">Аксессуар для интерьера</label>
+              <label for="interior" class="special-order__label-radio" tabindex="0">Аксессуар для интерьера</label>
             </div>
 
             <div class="special-order__input-wrapper special-order__input-wrapper--type">
-              <input type="radio" name="toggle" id="toy" class="special-order__radio visually-hidden">
-              <label for="toy" class="special-order__label-radio">Детская игрушка</label>
+              <input type="radio" name="toggle" id="toy" class="special-order__radio visually-hidden" value="toys">
+              <label for="toy" class="special-order__label-radio" tabindex="0">Детская игрушка</label>
             </div>
           </div>
         </fieldset>
@@ -105,33 +107,33 @@
 
           <div class="special-order__content-wrapper special-order__content-wrapper--color">
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
-              <input class="special-order__checkbox visually-hidden" type="checkbox" id="white" name="white" checked>
-              <label class="special-order__label-checkbox" for="white">Белый</label>
+              <input class="special-order__checkbox visually-hidden" type="checkbox" id="white" value="white-color" name="white" checked>
+              <label class="special-order__label-checkbox" for="white" tabindex="0">Белый</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
-              <input class="special-order__checkbox visually-hidden" type="checkbox" id="gray" name="gray" checked>
-              <label class="special-order__label-checkbox" for="gray">Серый</label>
+              <input class="special-order__checkbox visually-hidden" type="checkbox" id="gray" value="grey-color" name="gray" checked>
+              <label class="special-order__label-checkbox" for="gray" tabindex="0">Серый</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
-              <input class="special-order__checkbox visually-hidden" type="checkbox" id="tiffany" name="tiffany">
-              <label class="special-order__label-checkbox" for="tiffany">«Тиффани»</label>
+              <input class="special-order__checkbox visually-hidden" type="checkbox" id="tiffany" value="tiffany-color" name="tiffany">
+              <label class="special-order__label-checkbox" for="tiffany" tabindex="0">«Тиффани»</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
-              <input class="special-order__checkbox visually-hidden" type="checkbox" id="black" name="black">
-              <label class="special-order__label-checkbox" for="black">Черный</label>
+              <input class="special-order__checkbox visually-hidden" type="checkbox" id="black" value="black-color" name="black">
+              <label class="special-order__label-checkbox" for="black" tabindex="0">Черный</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
-              <input class="special-order__checkbox visually-hidden" type="checkbox" id="pink" name="pink">
-              <label class="special-order__label-checkbox" for="pink">Розовый</label>
+              <input class="special-order__checkbox visually-hidden" type="checkbox" id="pink" value="pink-color" name="pink">
+              <label class="special-order__label-checkbox" for="pink" tabindex="0">Розовый</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
-              <input class="special-order__checkbox visually-hidden" type="checkbox" id="orange" name="orange">
-              <label class="special-order__label-checkbox" for="orange">Оранжевый</label>
+              <input class="special-order__checkbox visually-hidden" type="checkbox" id="orange"value="orange-color" name="orange">
+              <label class="special-order__label-checkbox" for="orange"  tabindex="0">Оранжевый</label>
             </p>
           </div>
         </fieldset>
@@ -194,7 +196,8 @@
           </legend>
 
           <div class="special-order__content-wrapper">
-            <textarea class="special-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <label for="message"  class="visually-hidden" tabindex="0"> Пожелания: </label>
+            <textarea class="special-order__textarea" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
       </div>
