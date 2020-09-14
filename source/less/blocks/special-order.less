@@ -475,23 +475,6 @@
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 15px;
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    background-color: @green-form;
-
-    @media (min-width: @tablet-width) {
-      left: 15px;
-      width: 22px;
-      height: 22px;
-    }
-  }
-
   &:hover::before {
     border-color: @green-form;
   }
@@ -502,11 +485,23 @@
   }
 }
 
-.special-order__label:checked + .special-order__label-radio::after {
-  display: none;
-  background-color: @white;
-}
 
+.special-order__radio:checked + .special-order__label-radio::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: @green-form;
+
+  @media (min-width: @tablet-width) {
+    left: 15px;
+    width: 22px;
+    height: 22px;
+  }
+}
 
 .special-order__label-checkbox {
   position: relative;
