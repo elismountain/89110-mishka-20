@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Мишка — интернет-магазин игрушек</title>
+  <title>Mishka — online toy store</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
@@ -28,10 +28,10 @@
 
       <ul class="main-navigation__site-list site-navigation">
         <li class="site-navigation__item site-navigation__item--catalog">
-          <a class="site-navigation__link" href="catalog.html"> Каталог товаров</a>
+          <a class="site-navigation__link" href="catalog.html"> Catalog</a>
         </li>
         <li class="site-navigation__item site-navigation__item--knitting">
-          <a class="site-navigation__link" href="form.html"> Вязание на заказ</a>
+          <a class="site-navigation__link" href="form.html">Order form</a>
         </li>
       </ul>
 
@@ -41,7 +41,7 @@
             <svg class="user-navigation__search-image" width="18" height="18">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
-            <span class="user-navigation__search-text">Поиск по сайту</span>
+            <span class="user-navigation__search-text">Search</span>
           </a>
         </li>
 
@@ -50,49 +50,49 @@
             <svg class="user-navigation__search-image" width="21" height="18">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
-            <span class="user-navigation__search-busket"> Корзина: пока пуста </span>
+            <span class="user-navigation__search-busket"> Shopping cart: empty  </span>
           </a>
       </ul>
 
       <ul class="main-navigation__stock-list stock-navigation">
         <li class="stock-navigation__item">
-          <a class="stock-navigation__item-link" href="newstock.html">Новые поступления </a>
+          <a class="stock-navigation__item-link" href="newstock.html">New arrivals</a>
         </li>
         <li class="stock-navigation__item">
-          <a class="stock-navigation__item-link" href="sales.html">Распродажа </a>
+          <a class="stock-navigation__item-link" href="sales.html">Sale</a>
         </li>
       </ul>
 
-      <p class="main-navigation__text"> Бесплатная доставка по России </p>
+      <p class="main-navigation__text"> Free shipping </p>
     </nav>
   </header>
 
   <main class="page-main">
     <header class="page-main__header">
       <div class="page-main__header-wrapper">
-        <h1 class="page-main__title">Вязание на заказ</h1>
+        <h1 class="page-main__title">Knitting to order</h1>
       </div>
     </header>
 
     <form class="special-order" action="https://echo.htmlacademy.ru" method="post">
-      <p class="special-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      <p class="special-order__description"> We will be happy to make you wishes true! Fill out the order form and we will contact you to clarify the details.
       </p>
 
       <div class="special-order__block-wrapper">
         <fieldset class="special-order__fieldset special-order__fieldset--type">
           <legend class="special-order__legend">
-            <span class="special-order__legent-text">Тип</span>
+            <span class="special-order__legent-text">Type</span>
           </legend>
 
           <div class="special-order__content-wrapper special-order__content-wrapper--type">
             <div class="special-order__input-wrapper special-order__input-wrapper--type">
               <input type="radio" name="toggle" id="interior" value="accessory" checked class="special-order__radio visually-hidden">
-              <label for="interior" class="special-order__label-radio" tabindex="0">Аксессуар для интерьера</label>
+              <label for="interior" class="special-order__label-radio" tabindex="0">Interior accessory</label>
             </div>
 
             <div class="special-order__input-wrapper special-order__input-wrapper--type">
               <input type="radio" name="toggle" id="toy" class="special-order__radio visually-hidden" value="toys">
-              <label for="toy" class="special-order__label-radio" tabindex="0">Детская игрушка</label>
+              <label for="toy" class="special-order__label-radio" tabindex="0">Children's toy</label>
             </div>
           </div>
         </fieldset>
@@ -101,39 +101,39 @@
       <div class="special-order__block-wrapper special-order__block-wrapper--gray">
         <fieldset class="special-order__fieldset special-order__fieldset--color">
           <legend class="special-order__legend">
-            <span class="special-order__legent-text">Цвет</span>
+            <span class="special-order__legent-text">Colour</span>
           </legend>
 
 
           <div class="special-order__content-wrapper special-order__content-wrapper--color">
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
               <input class="special-order__checkbox visually-hidden" type="checkbox" id="white" value="white-color" name="white" checked>
-              <label class="special-order__label-checkbox" for="white" tabindex="0">Белый</label>
+              <label class="special-order__label-checkbox" for="white" tabindex="0">White</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
               <input class="special-order__checkbox visually-hidden" type="checkbox" id="gray" value="grey-color" name="gray" checked>
-              <label class="special-order__label-checkbox" for="gray" tabindex="0">Серый</label>
+              <label class="special-order__label-checkbox" for="gray" tabindex="0">Grey</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
               <input class="special-order__checkbox visually-hidden" type="checkbox" id="tiffany" value="tiffany-color" name="tiffany">
-              <label class="special-order__label-checkbox" for="tiffany" tabindex="0">«Тиффани»</label>
+              <label class="special-order__label-checkbox" for="tiffany" tabindex="0">Tiffany</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
               <input class="special-order__checkbox visually-hidden" type="checkbox" id="black" value="black-color" name="black">
-              <label class="special-order__label-checkbox" for="black" tabindex="0">Черный</label>
+              <label class="special-order__label-checkbox" for="black" tabindex="0">Black</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
               <input class="special-order__checkbox visually-hidden" type="checkbox" id="pink" value="pink-color" name="pink">
-              <label class="special-order__label-checkbox" for="pink" tabindex="0">Розовый</label>
+              <label class="special-order__label-checkbox" for="pink" tabindex="0">Pink</label>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--color">
               <input class="special-order__checkbox visually-hidden" type="checkbox" id="orange"value="orange-color" name="orange">
-              <label class="special-order__label-checkbox" for="orange"  tabindex="0">Оранжевый</label>
+              <label class="special-order__label-checkbox" for="orange"  tabindex="0">Orange</label>
             </p>
           </div>
         </fieldset>
@@ -142,23 +142,18 @@
       <div class="special-order__block-wrapper">
         <fieldset class="special-order__fieldset special-order__fieldset--name">
           <legend class="special-order__legend">
-            <span class="special-order__legent-text">ФИО</span>
+            <span class="special-order__legent-text">NAME</span>
           </legend>
 
           <div class="special-order__content-wrapper special-order__content-wrapper--name">
             <p class="special-order__input-wrapper special-order__input-wrapper--name">
-              <label class="special-order__label" for="name">Имя:</label>
-              <input class="special-order__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+              <label class="special-order__label" for="name">Name:</label>
+              <input class="special-order__input-text" type="text" id="name" name="name" placeholder="Enter your name*" required>
             </p>
 
             <p class="special-order__input-wrapper special-order__input-wrapper--name">
-              <label class="special-order__label" for="surname">Фамилия:</label>
-              <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required> </p>
-
-            <p class="special-order__input-wrapper special-order__input-wrapper--name">
-              <label class="special-order__label" for="middlename">Отчество:</label>
-              <input class="special-order__input-text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете*">
-            </p>
+              <label class="special-order__label" for="surname">Surname:</label>
+              <input class="special-order__input-text" type="text" id="surname" name="surname" placeholder="Enter your last name*" required> </p>
           </div>
         </fieldset>
       </div>
@@ -167,7 +162,7 @@
         <fieldset class="special-order__fieldset special-order__fieldset--contact">
           <div class="special-order__content-wrapper">
             <label class="special-order__legend special-order__legend--phone" for="phone">
-              <span class="special-order__legent-text"> Тел </span>
+              <span class="special-order__legent-text"> Phone </span>
             </label>
             <p class="special-order__input-wrapper special-order__input-wrapper--contact">
               <input class="special-order__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
@@ -180,7 +175,7 @@
               <span class="special-order__legent-text"> E-mail </span>
             </label>
             <p class="special-order__input-wrapper special-order__input-wrapper--contact">
-              <input class="special-order__input-text" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+              <input class="special-order__input-text" type="email" id="email" name="email" placeholder="Email*" required>
               <svg class="special-order__input-image special-order__input-image--email" width="32px" height="32px">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
@@ -192,19 +187,19 @@
       <div class="special-order__block-wrapper">
         <fieldset class="special-order__fieldset special-order__fieldset--message">
           <legend class="special-order__legend">
-            <span class="special-order__legent-text">Доп</span>
+            <span class="special-order__legent-text">Other</span>
           </legend>
 
           <div class="special-order__content-wrapper">
-            <label for="message"  class="visually-hidden" tabindex="0"> Пожелания: </label>
-            <textarea class="special-order__textarea" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <label for="message"  class="visually-hidden" tabindex="0"> Wishes: </label>
+            <textarea class="special-order__textarea" name="message" id="message" placeholder=""></textarea>
           </div>
         </fieldset>
       </div>
 
       <div class="special-order__submit-wrapper">
-        <p class="special-order__essential">*Поля обязательны для заполнения</p>
-        <button class="special-order__button button" type="submit">Отправить заказ</button>
+        <p class="special-order__essential">*The fields are required to be filled in</p>
+        <button class="special-order__button button" type="submit">Send an order</button>
       </div>
     </form>
   </main>
@@ -243,7 +238,7 @@
 
       <p class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-          <span class="page-footer__copyright-text">Разработано</span>
+          <span class="page-footer__copyright-text">Developed</span>
           <svg class="page-footer__copyright-image" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
